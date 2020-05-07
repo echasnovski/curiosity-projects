@@ -1,0 +1,14 @@
+1. Download video with the lowest video quality:
+1.1 Get information about which `--itag` option will give the lowest file size:
+
+    you-get -i [URL]
+
+1.2 Download the video:
+
+    you-get --itag=* [URL] --output-filename='ttd-world-record'
+
+2. Extract audio:
+
+    ffmpeg -i ttd-world-record.mp4 -vn ttd-world-record_audio.mp3
+
+3. Run 'exploration.py' code.
