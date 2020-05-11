@@ -30,11 +30,11 @@ def sec_to_time(x):
     return list(zip(hours, mins, secs))
 
 
-print(f"Total number of detected beats: {len(beats)}")
+print(f"Total number of detected bounces: {len(beats)}")
 
 duration_minutes = (beats[-1] - beats[0]) / 60
 avg_bpm = len(beats) / duration_minutes
-print(f"Average bounes per minute: {avg_bpm}")
+print(f"Average number of bounces per minute: {avg_bpm}")
 
 plt.plot(beats, compute_instant_tempo(beats, n=61))
 plt.show()

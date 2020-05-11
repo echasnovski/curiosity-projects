@@ -12,7 +12,6 @@ audio_files.sort()
 # Needed to correctly produce beat timestamps relative to whole audio
 # This should be the same value as in `-segment_time` option to `ffmpeg`
 # splitting call
-# split_period = 1800
 split_period = 3600
 
 for i, file in enumerate(audio_files):
@@ -51,7 +50,7 @@ for i, file in enumerate(audio_files):
     beats_file = f"{audio_name}_beats.csv"
     np.savetxt(beats_file, beats, fmt="%.3f", delimiter=",")
 
-# Produce a single beats file
+# Produce a single beats array
 beats_files = glob.glob("*audio[0-9][0-9][0-9]_beats.csv")
 beats = np.concatenate([np.loadtxt(f, delimiter=",") for f in beats_files])
 beats = np.sort(beats)
