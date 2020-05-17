@@ -35,4 +35,8 @@ sample_not_recent = TrackedSample(x, weights=[0] + [1] * (len(x) - 1))
 ## No element is drawn twice in a row
 sample_not_recent.draw(size=25)
 #> [8, 4, 5, 8, 5, 4, 5, 8, 2, 9, 4, 6, 5, 8, 1, 6, 3, 2, 9, 2, 9, 2, 1, 7, 4]
+
+# Get current state of sampling pool
+sample_not_recent.pool
+#> [4, 7, 1, 2, 9, 3, 6, 8, 5, 10]
 ```
