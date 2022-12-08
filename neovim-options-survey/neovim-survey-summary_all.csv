@@ -1,0 +1,1638 @@
+option,value,n,percent
+autochdir,*default*,224,99%
+autochdir,true,3,1%
+autoindent,*default*,226,100%
+autoindent,false,1,0%
+autoread,*default*,225,99%
+autoread,false,2,1%
+autowrite,*default*,212,93%
+autowrite,true,15,7%
+autowriteall,*default*,222,98%
+autowriteall,true,5,2%
+background,*default*,208,92%
+background,light,18,8%
+background,,1,0%
+backspace,*default*,216,95%
+backspace,2,4,2%
+backspace,"eol,start,indent",4,2%
+backspace,"indent,eol,start,nostop",2,1%
+backspace,3,1,0%
+backup,*default*,207,91%
+backup,true,20,9%
+backupcopy,*default*,218,96%
+backupcopy,yes,8,4%
+backupcopy,"auto,breakhardlink",1,0%
+backupext,*default*,225,99%
+backupext,~%projects%lazy.nvim,1,0%
+backupext,~~tmp~~2022-11-24-21-0,1,1%
+belloff,*default*,226,100%
+belloff,cursor,1,0%
+breakat,*default*,222,98%
+breakat,  ,1,0%
+breakat," \t!@*-+;:,./=&?",1,0%
+breakat," ^I!@*;:,./?(=",1,0%
+breakat,",!:\\ \t?",1,1%
+breakat,"\\ \\\t;:,!?",1,1%
+breakindent,*default*,160,70%
+breakindent,true,67,30%
+breakindentopt,*default*,211,93%
+breakindentopt,sbr,3,1%
+breakindentopt,shift:2,3,1%
+breakindentopt,"shift:2,min:20",3,1%
+breakindentopt,list:-1,1,0%
+breakindentopt,min:60,1,0%
+breakindentopt,"sbr,shift:2",1,0%
+breakindentopt,"shift:1,sbr",1,1%
+breakindentopt,"shift:2,list:-1,min:30",1,1%
+breakindentopt,shift:4,1,1%
+breakindentopt,"shift:4,sbr",1,1%
+cedit,*default*,226,100%
+cedit,\15,1,0%
+cindent,*default*,219,96%
+cindent,true,8,4%
+cinoptions,*default*,226,100%
+cinoptions,"g0,N-s,E-s",1,0%
+clipboard,unnamedplus,101,44%
+clipboard,*default*,101,45%
+clipboard,unnamed,15,7%
+clipboard,"unnamed,unnamedplus",7,3%
+clipboard,"unnamedplus,unnamed",3,1%
+cmdheight,*default*,146,64%
+cmdheight,0,56,25%
+cmdheight,2,25,11%
+cmdwinheight,*default*,223,98%
+cmdwinheight,5,3,1%
+cmdwinheight,1,1,1%
+colorcolumn,*default*,152,67%
+colorcolumn,80,17,8%
+colorcolumn,+1,13,6%
+colorcolumn,100,7,3%
+colorcolumn,120,7,3%
+colorcolumn,99999,5,2%
+colorcolumn,"80,100",4,2%
+colorcolumn,90,4,2%
+colorcolumn,81,3,1%
+colorcolumn,0,2,1%
+colorcolumn,79,2,1%
+colorcolumn,"80,120",2,1%
+colorcolumn,"+1,120",1,0%
+colorcolumn,140,1,0%
+colorcolumn,"140,160",1,0%
+colorcolumn,160,1,0%
+colorcolumn,"32,72,80,120",1,0%
+colorcolumn,66,1,0%
+colorcolumn,"81,101",1,1%
+colorcolumn,"81,121",1,1%
+colorcolumn,89,1,1%
+comments,*default*,218,96%
+comments,"s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-,b:#,b:#:",8,4%
+comments,"://,b:#,b:#:",1,0%
+commentstring,*default*,225,99%
+commentstring,# %s,2,1%
+complete,*default*,210,93%
+complete,".,w,b,u,t,kspell",3,1%
+complete,,2,1%
+complete,".,kspell",2,1%
+complete,".,w,b,k",2,1%
+complete,".,w,b,u",2,1%
+complete,.,1,0%
+complete,".,b,u",1,0%
+complete,".,w",1,0%
+complete,".,w,b,i,u,t,",1,0%
+complete,".,w,b,t",1,1%
+complete,".,w,b,u,kspell",1,1%
+completefunc,*default*,221,98%
+completefunc,v:lua.COQ.Omnifunc,3,1%
+completefunc,v:lua.MiniCompletion.completefunc_lsp,3,1%
+completeopt,*default*,69,31%
+completeopt,"menu,menuone,noselect",57,25%
+completeopt,"menuone,noselect",44,20%
+completeopt,"menuone,noinsert,noselect",18,8%
+completeopt,"menu,menuone",5,2%
+completeopt,menu,3,1%
+completeopt,"menu,menuone,noinsert,noselect",3,1%
+completeopt,"menuone,noselect,noinsert",3,1%
+completeopt,"menu,menuone,noinsert",2,1%
+completeopt,"menu,menuone,noselect,preview",2,1%
+completeopt,"menu,preview,noinsert,menuone,noselect",2,1%
+completeopt,menuone,2,1%
+completeopt,"menuone,longest",2,1%
+completeopt,longest,1,0%
+completeopt,"longest,menu",1,0%
+completeopt,"longest,menuone,noselect,noinsert,menuone,noselect",1,0%
+completeopt,"menu,longest",1,0%
+completeopt,"menu,menuone,noselect,noinsert",1,0%
+completeopt,"menu,menuone,preview,noselect",1,0%
+completeopt,"menu,noinsert,menuone,noselect",1,0%
+completeopt,"menu,noselect",1,0%
+completeopt,"menu,preview,menuone",1,0%
+completeopt,"menuone,noinsert",1,1%
+completeopt,"menuone,noinsert,noselect,preview",1,1%
+completeopt,"menuone,noselect,menu",1,1%
+completeopt,"menuone,noselect,noinsert,noinsert,menuone,noselect",1,1%
+completeopt,"menuone,preview",1,1%
+completeopt,"noselect,noinsert,menuone,preview",1,1%
+concealcursor,*default*,212,94%
+concealcursor,nc,5,2%
+concealcursor,inc,3,1%
+concealcursor,n,3,1%
+concealcursor,niv,2,1%
+concealcursor,i,1,0%
+concealcursor,ic,1,1%
+conceallevel,*default*,196,86%
+conceallevel,2,27,12%
+conceallevel,3,3,1%
+conceallevel,1,1,1%
+confirm,*default*,202,89%
+confirm,true,25,11%
+copyindent,*default*,220,97%
+copyindent,true,7,3%
+cpoptions,*default*,222,98%
+cpoptions,_aABesFnc,1,0%
+cpoptions,_FcnaesBA,1,0%
+cpoptions,aABceFs,1,0%
+cpoptions,aABceFs_n,1,1%
+cpoptions,eFs_ncaAB,1,1%
+cursorcolumn,*default*,215,95%
+cursorcolumn,true,12,5%
+cursorline,true,150,66%
+cursorline,*default*,77,34%
+cursorlineopt,*default*,215,95%
+cursorlineopt,number,8,4%
+cursorlineopt,line,1,0%
+cursorlineopt,"number,screenline",1,0%
+cursorlineopt,screenline,1,0%
+cursorlineopt,"screenline,number",1,1%
+define,*default*,225,99%
+define,,2,1%
+diffopt,*default*,173,77%
+diffopt,"internal,filler,closeoff,linematch:60",9,4%
+diffopt,"internal,filler,closeoff,vertical",4,2%
+diffopt,"internal,filler,closeoff,algorithm:patience",2,1%
+diffopt,"internal,filler,closeoff,algorithm:patience,indent-heuristic",2,1%
+diffopt,vertical,2,1%
+diffopt,"vertical,filler,closeoff,context:3,internal,indent-heuristic,algorithm:histogram",2,1%
+diffopt,"filler,internal,algorithm:histogram,indent-heuristic",1,0%
+diffopt,"filler,internal,algorithm:histogram,indent-heuristic,vertical",1,0%
+diffopt,"filler,internal,algorithm:patience,indent-heuristic,closeoff,iwhite",1,0%
+diffopt,"filler,iwhite",1,0%
+diffopt,"filler,iwhite,internal,algorithm:patience",1,0%
+diffopt,"filler,vertical,iwhite",1,0%
+diffopt,"hiddenoff,iwhiteall,algorithm:patience",1,0%
+diffopt,"internal,filler,algorithm:patience,indent-heuristic,closeoff,linematch:120",1,0%
+diffopt,"internal,filler,closeoff,algorithm:histogram,indent-heuristic,linematch:60",1,0%
+diffopt,"internal,filler,closeoff,algorithm:histogram,iwhite,indent-heuristic,vertical,linematch:60",1,0%
+diffopt,"internal,filler,closeoff,algorithm:patience,indent-heuristic,vertical",1,0%
+diffopt,"internal,filler,closeoff,algorithm:patience,indent-heuristic,vertical,context:3",1,0%
+diffopt,"internal,filler,closeoff,algorithm:patience,iwhite",1,0%
+diffopt,"internal,filler,closeoff,algorithm:patience,vertical",1,0%
+diffopt,"internal,filler,closeoff,context:0,indent-heuristic,hiddenoff,foldcolumn:1,algorithm:patience",1,0%
+diffopt,"internal,filler,closeoff,context:3",1,0%
+diffopt,"internal,filler,closeoff,context:5,vertical,linematch:100",1,0%
+diffopt,"internal,filler,closeoff,hiddenoff,algorithm:minimal",1,0%
+diffopt,"internal,filler,closeoff,hiddenoff,algorithm:minimal,linematch:60",1,0%
+diffopt,"internal,filler,closeoff,horizontal",1,0%
+diffopt,"internal,filler,closeoff,internal,algorithm:patience,vertical",1,1%
+diffopt,"internal,filler,closeoff,iwhite",1,1%
+diffopt,"internal,filler,closeoff,iwhite,internal,algorithm:patience,linematch:60",1,1%
+diffopt,"internal,filler,closeoff,linematch:50",1,1%
+diffopt,"internal,filler,closeoff,linematch:75",1,1%
+diffopt,"internal,filler,closeoff,vertical,algorithm:histogram,indent-heuristic",1,1%
+diffopt,"internal,filler,closeoff,vertical,algorithm:histogram,indent-heuristic,hiddenoff",1,1%
+diffopt,"internal,filler,closeoff,vertical,algorithm:histogram,indent-heuristic,linematch:60",1,1%
+diffopt,"internal,filler,closeoff,vertical,indent-heuristic,algorithm:histogram,linematch:60,hiddenoff",1,1%
+diffopt,"internal,filler,closeoff,vertical,indent-heuristic,algorithm:patience",1,1%
+diffopt,"internal,filler,closeoff,vertical,linematch:60",1,1%
+diffopt,"internal,filler,vertical,algorithm:patience",1,1%
+diffopt,"vertical,closeoff",1,1%
+display,*default*,223,98%
+display,"lastline,uhex",2,1%
+display,"lastline,msgsep",1,0%
+display,"lastline,msgsep,uhex",1,1%
+eadirection,*default*,226,100%
+eadirection,hor,1,0%
+emoji,*default*,224,99%
+emoji,false,3,1%
+endoffile,*default*,85,84%
+endoffile,false,16,16%
+equalalways,*default*,217,96%
+equalalways,false,10,4%
+errorbells,*default*,226,100%
+errorbells,true,1,0%
+errorformat,*default*,226,100%
+errorformat,"%\\s%#%\\d%#:%# %#from %f:%l:%m,IN %f:%l:%m,,%*[^\""]\""%f\""%*\\D%l: %m,\""%f\""%*\\D%l: %m,%-G%f:%l: (Each undeclared identifier is reported only once,%-G%f:%l: for each function it appears in.),%-GIn file included from %f:%l:%c:,%-GIn file included from %f:%l:%c\\,,%-GIn file included from %f:%l:%c,%-GIn file included from %f:%l,%-G%*[ ]from %f:%l:%c,%-G%*[ ]from %f:%l:,%-G%*[ ]from %f:%l\\,,%-G%*[ ]from %f:%l,%f:%l:%c:%m,%f(%l):%m,%f:%l:%m,\""%f\""\\, line %l%*\\D%c%*[^ ] %m,%D%*\\a[%*\\d]: Entering directory %*[`']%f',%X%*\\a[%*\\d]: Leaving directory %*[`']%f',%D%*\\a: Entering directory %*[`']%f',%X%*\\a: Leaving directory %*[`']%f',%DMaking %*\\a in %f,%f|%l| %m",1,0%
+eventignore,*default*,201,89%
+eventignore,"CursorHoldI,CursorHold",14,6%
+eventignore,"CursorHold,CursorHoldI",12,5%
+expandtab,true,187,83%
+expandtab,*default*,39,17%
+expandtab,false,1,0%
+exrc,*default*,218,96%
+exrc,true,9,4%
+fileencoding,*default*,184,81%
+fileencoding,utf-8,43,19%
+fileencodings,*default*,218,96%
+fileencodings,"ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1",2,1%
+fileencodings,"ucs-bom,utf-8,default,cp1252,latin1",1,0%
+fileencodings,"ucs-bom,utf-8,gbk,gb18030,big5,euc-jp,latin1",1,0%
+fileencodings,utf-8,1,0%
+fileencodings,"utf-8,cp1251",1,0%
+fileencodings,"utf-8,cp949,latin1",1,1%
+fileencodings,"utf-8,iso-2022-jp,euc-jp,sjis,utf-16,utf-16le,gb2312",1,1%
+fileencodings,"utf-8,ucs-bom,gbk,cp936,big5,latin-1",1,1%
+fileformat,*default*,225,99%
+fileformat,unix,2,1%
+fileformats,*default*,217,96%
+fileformats,"unix,dos,mac",4,2%
+fileformats,"unix,mac,dos",3,1%
+fileformats,unix,2,1%
+fileformats,"unix,dos",1,0%
+fileignorecase,*default*,225,99%
+fileignorecase,true,2,1%
+fillchars,*default*,131,59%
+fillchars,eob: ,22,10%
+fillchars,fold: ,18,8%
+fillchars,vert:│,4,2%
+fillchars,"horiz:━,horizdown:┳,horizup:┻,vert:┃,verthoriz:╋,vertleft:┨,vertright:┣",3,1%
+fillchars,diff:╱,2,1%
+fillchars,"eob: ,fold: ",2,1%
+fillchars,"fold: ,vert:│,eob: ,msgsep:‾",2,1%
+fillchars,"horiz:━,horizdown:┳,horizup:┻,vert:┃,verthoriz:╋,vertleft:┫,vertright:┣",2,1%
+fillchars,"vert:│,fold: ",2,1%
+fillchars,diff: ,1,0%
+fillchars,"diff: ,fold: ,eob: ,vert: ,horiz: ,lastline:•",1,0%
+fillchars,"diff:―,eob: ,fold: ,horiz: ,horizdown: ,horizup: ,vert: ,verthoriz: ,vertleft: ,vertright: ",1,0%
+fillchars,"diff:/,eob: ",1,0%
+fillchars,"diff:/,eob: ,fold: ,horiz:─,horizdown:┬,horizup:┴,vert:│,verthoriz:┼,vertleft:┤,vertright:├",1,0%
+fillchars,"diff:/,fold: ",1,0%
+fillchars,"diff:─,vert: ",1,0%
+fillchars,"diff:╱,eob: ",1,0%
+fillchars,"diff:╱,eob: ,fold: ,foldclose:,foldopen:,foldsep: ",1,0%
+fillchars,"diff:╱,eob: ,fold: ,foldclose:,foldopen:,horiz:─,horizdown:┬,horizup:┴,vert:│,verthoriz:┼,vertleft:┤,vertright:├",1,0%
+fillchars,"diff:╱,eob: ,fold: ,vert:│",1,0%
+fillchars,"diff:╱,eob: ,foldclose:▸,foldopen:▾,foldsep:│,msgsep:‾",1,0%
+fillchars,"diff:╱,horiz:━,horizdown:┳,horizup:┻,vert:┃,verthoriz:╋,vertleft:┫,vertright:┣,fold: ",1,0%
+fillchars,"diff:⣿,eob: ,fold:─,foldclose:▸,foldopen:▾,foldsep:│,msgsep:‾,vert:┃",1,0%
+fillchars,"diff:⣿,vert:│",1,0%
+fillchars,"diff:,eob: ,fold: ",1,0%
+fillchars,"eob: ,diff: ",1,0%
+fillchars,"eob: ,fold: ,foldclose:,foldopen:",1,0%
+fillchars,"eob: ,fold: ,foldclose:,foldopen:,foldsep: ",1,0%
+fillchars,"eob: ,fold: ,foldclose:,foldopen:,foldsep: ,horiz:━,horizdown:┳,horizup:┻,vert:┃,verthoriz:╋,vertleft:┫,vertright:┣",1,0%
+fillchars,"eob: ,fold: ,foldopen:,foldsep: ,foldclose:,stlnc:-,vert:|",1,0%
+fillchars,"eob: ,fold: ,horiz:━,horizdown:┳,horizup:┻,vert:┃,verthoriz:╋,vertleft:┫,vertright:┣",1,0%
+fillchars,"eob: ,foldsep: ,foldopen:,foldclose:",1,0%
+fillchars,"eob: ,horiz: ,horizdown: ,horizup: ,vert: ,verthoriz: ,vertleft: ,vertright: ",1,0%
+fillchars,eob:~,1,1%
+fillchars,"eob:~,vert:│",1,1%
+fillchars,"fold: ,horiz:━,horizdown:┳,horizup:┻,vert:┃,verthoriz:╋,vertleft:┫,vertright:┣",1,1%
+fillchars,"fold: ,vert:│",1,1%
+fillchars,"foldclose:,foldopen:,fold: ",1,1%
+fillchars,"foldclose:,foldopen:,foldsep: ,fold: ",1,1%
+fillchars,"horiz:═,horizdown:╦,horizup:╩,vert:║,verthoriz:╬,vertleft:╣,vertright:╠,fold: ",1,1%
+fillchars,msgsep:◌,1,1%
+fillchars,"stl:―,stlnc:—,vert:│,fold:۰,diff:·",1,1%
+fillchars,"stl:─,stlnc:─",1,1%
+fillchars,vert: ,1,1%
+fillchars,"vert: ,stl: ,stlnc: ",1,1%
+fillchars,"vert: ,vertleft: ,vertright: ,horiz: ,horizup: ,horizdown: ,verthoriz: ",1,1%
+fillchars,vert:|,1,1%
+fillchars,"vert:│,stl: ,stlnc: ,fold:-,diff:-",1,1%
+fixendofline,*default*,220,97%
+fixendofline,false,7,3%
+foldclose,*default*,226,100%
+foldclose,all,1,0%
+foldcolumn,*default*,208,92%
+foldcolumn,1,16,7%
+foldcolumn,auto,2,1%
+foldcolumn,2,1,0%
+foldenable,*default*,196,86%
+foldenable,false,31,14%
+foldexpr,*default*,168,74%
+foldexpr,nvim_treesitter#foldexpr(),55,24%
+foldexpr,,3,1%
+foldexpr,utils#VimFolds(v:lnum),1,1%
+foldlevel,*default*,141,62%
+foldlevel,99,55,24%
+foldlevel,20,6,3%
+foldlevel,1,5,2%
+foldlevel,10,5,2%
+foldlevel,999,3,1%
+foldlevel,100,2,1%
+foldlevel,2,2,1%
+foldlevel,3,2,1%
+foldlevel,10000,1,0%
+foldlevel,100000,1,0%
+foldlevel,15,1,0%
+foldlevel,18,1,1%
+foldlevel,4,1,1%
+foldlevel,666,1,1%
+foldlevelstart,*default*,183,81%
+foldlevelstart,99,35,16%
+foldlevelstart,20,2,1%
+foldlevelstart,0,1,0%
+foldlevelstart,1,1,0%
+foldlevelstart,10,1,0%
+foldlevelstart,100,1,0%
+foldlevelstart,2,1,0%
+foldlevelstart,3,1,1%
+foldlevelstart,999,1,1%
+foldmarker,*default*,226,100%
+foldmarker,"/*,*/",1,0%
+foldmethod,*default*,135,59%
+foldmethod,expr,54,24%
+foldmethod,marker,17,8%
+foldmethod,indent,16,7%
+foldmethod,syntax,5,2%
+foldminlines,*default*,223,98%
+foldminlines,10,2,1%
+foldminlines,0,1,0%
+foldminlines,4,1,1%
+foldnestmax,*default*,204,90%
+foldnestmax,3,11,5%
+foldnestmax,10,6,3%
+foldnestmax,1,3,1%
+foldnestmax,2,1,0%
+foldnestmax,4,1,0%
+foldnestmax,5,1,1%
+foldopen,*default*,218,96%
+foldopen,"block,hor,mark,percent,quickfix,search,tag,undo,jump",5,2%
+foldopen,"hor,mark,percent,quickfix,search,tag,undo",2,1%
+foldopen,"block,hor,mark,percent,quickfix,search,tag,undo,insert,jump",1,0%
+foldopen,"mark,percent,quickfix,search,tag,undo,insert,jump",1,1%
+foldtext,*default*,175,78%
+foldtext,v:lua.require'ufo.main'.foldtext(),25,11%
+foldtext,v:lua.require('pretty-fold').foldtext.global(),9,4%
+foldtext,FoldText(),3,1%
+foldtext,MyFoldText(),2,1%
+foldtext,"substitute(getline(v:foldstart),'\\\\t',repeat('\\ ',&tabstop),'g').'...'.trim(getline(v:foldend)) . ' (' . (v:foldend - v:foldstart + 1) . ' lines)'",2,1%
+foldtext,"'v:lua.stevearc.foldtext()"")'",1,0%
+foldtext,CustomFoldText(),1,0%
+foldtext,NeatFoldText(),1,0%
+foldtext,"substitute(getline(v:foldstart),'\\\\t',repeat('\\ ',&tabstop),'g'). '  [' . (v:foldend - v:foldstart + 1) . ']'",1,0%
+foldtext,"substitute(getline(v:foldstart),'\\\\t',repeat('\\ ',&tabstop),'g').' ... '.trim(getline(v:foldend)).' ('.(v:foldend-v:foldstart).' lines folded...)'",1,0%
+foldtext,"substitute(getline(v:foldstart),'\\\\t',repeat('\\ ',&tabstop),'g').'...'.trim(getline(v:foldend)) ",1,0%
+foldtext,utils#MyFoldText(),1,0%
+foldtext,v:lua.custom_fold_text(),1,1%
+foldtext,v:lua.foldtext2(),1,1%
+foldtext,v:lua.MyFoldText(),1,1%
+foldtext,v:lua.require('fold').foldtext(),1,1%
+formatexpr,*default*,226,100%
+formatexpr,CocAction('formatSelected'),1,0%
+formatlistpat,*default*,225,99%
+formatlistpat,\\C^\\s*[\\[({]\\?\\([0-9]\\+\\|[iIvVxXlLcCdDmM]\\+\\|[a-zA-Z]\\)[\\]:.)}]\\s\\+\\|^\\s*[-+o*]\\s\\+,1,0%
+formatlistpat,^\\s*[0-9\\-\\+\\*]\\+[\\.\\)]*\\s\\+,1,1%
+formatoptions,*default*,176,79%
+formatoptions,tqj,3,1%
+formatoptions,,2,1%
+formatoptions,cqjt,2,1%
+formatoptions,jcroql,2,1%
+formatoptions,qjt,2,1%
+formatoptions,12,1,0%
+formatoptions,1jcroql,1,0%
+formatoptions,1jql,1,0%
+formatoptions,1toqcj,1,0%
+formatoptions,cqj,1,0%
+formatoptions,cqrnj,1,0%
+formatoptions,cqrt,1,0%
+formatoptions,cqtrj,1,0%
+formatoptions,crjqn,1,0%
+formatoptions,crjqt1n,1,0%
+formatoptions,croqlj,1,0%
+formatoptions,crqljn,1,0%
+formatoptions,crqn2lj,1,0%
+formatoptions,crqnj,1,0%
+formatoptions,jcroqlmB,1,0%
+formatoptions,jcroqlnt,1,0%
+formatoptions,jcrql,1,0%
+formatoptions,jmMcql,1,0%
+formatoptions,jqlc12,1,0%
+formatoptions,jqrnc,1,0%
+formatoptions,jqt,1,0%
+formatoptions,jtq,1,0%
+formatoptions,jtqlnr,1,0%
+formatoptions,lc2nq,1,0%
+formatoptions,ljq,1,1%
+formatoptions,ncqjr1t,1,1%
+formatoptions,nljqrc,1,1%
+formatoptions,o1jqrlc,1,1%
+formatoptions,qct,1,1%
+formatoptions,qn1,1,1%
+formatoptions,rjncq,1,1%
+formatoptions,rqnlj,1,1%
+formatoptions,tcqjl,1,1%
+formatoptions,tcqjmM,1,1%
+formatoptions,tcqjn,1,1%
+formatoptions,tcqn2vlB1j,1,1%
+formatoptions,tcqnw1,1,1%
+formatoptions,tcrnj,1,1%
+formatoptions,tcrqn1j,1,1%
+formatoptions,tqjn,1,1%
+fsync,*default*,225,99%
+fsync,true,2,1%
+gdefault,*default*,206,91%
+gdefault,true,21,9%
+grepformat,*default*,197,87%
+grepformat,%f:%l:%c:%m,16,7%
+grepformat,"%f:%l:%c:%m,%f:%l:%m",10,5%
+grepformat,"%f:%l:%c:%m,%f:%l:%m,%f:%l%m,%f  %l%m",3,1%
+grepformat,"%f:%l:%m,%m %f match%ts,%f",1,0%
+grepprg,*default*,182,81%
+grepprg,rg --vimgrep,13,6%
+grepprg,rg --vimgrep --no-heading --smart-case,7,3%
+grepprg,rg --vimgrep --no-heading,4,2%
+grepprg,rg --hidden --vimgrep --smart-case --,3,1%
+grepprg,rg --vimgrep --smart-case,3,1%
+grepprg,"'rg --hidden --glob ""!.git"" --no-heading --smart-case --vimgrep --follow $*'",1,0%
+grepprg,git --no-pager grep --no-color -n $*,1,0%
+grepprg,rg --no-heading --vimgrep,1,0%
+grepprg,rg --no-heading --vimgrep --smart-case,1,0%
+grepprg,rg --no-ignore --no-heading --color never -n $*,1,0%
+grepprg,rg --smart-case --color=never --no-heading -H -n --column,1,0%
+grepprg,rg --smart-case --vimgrep --hidden,1,0%
+grepprg,rg --vimgrep --hidden,1,0%
+grepprg,rg --vimgrep --no-heading --hidden,1,0%
+grepprg,rg --vimgrep --smart-case --hidden,1,1%
+grepprg,rg --vimgrep --smart-case --hidden --follow,1,1%
+grepprg,rg --vimgrep -S,1,1%
+grepprg,rg -i --vimgrep $*,1,1%
+grepprg,rg -S --vimgrep $*,1,1%
+grepprg,rg\\ --vimgrep\\ --smart-case\\ --follow,1,1%
+guicursor,*default*,170,75%
+guicursor,a:NoiceHiddenCursor,27,12%
+guicursor,,7,3%
+guicursor,"n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor",3,1%
+guicursor,"n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor20",2,1%
+guicursor,"n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175",2,1%
+guicursor,"a:blinkwait700-blinkoff500-blinkon500,n-c-sm:block-Cursor,v:VCursor,i-ci-ve:ver25-ICursor,r-cr-o:hor20-RCursor",1,0%
+guicursor,a:block-Caret,1,0%
+guicursor,"a:block,i:ver25,v:hor10,r-cr-o:hor20",1,0%
+guicursor,"a:Cursor,n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,i-ve-r-cr-o:blinkoff500-blinkon500",1,0%
+guicursor,"i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff500-blinkon500,sm:block-blinkwait175-blinkoff150-blinkon175,v-sm:block-ModesVisual,i-ci-ve:ver25-ModesInsert,r-cr-o:hor20-ModesOperator",1,0%
+guicursor,i:ver25-VimrInsertCursor,1,0%
+guicursor,n-v-c-sm-i-ci-ve-r-cr-o:block,1,0%
+guicursor,"n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",1,0%
+guicursor,"n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,n-v-c:blinkon0,i-ci:ver25-Cursor/lCursor-blinkwait30-blinkoff100-blinkon100",1,0%
+guicursor,"n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,v-sm:block-ModesVisual,i-ci-ve:ver25-ModesInsert,r-cr-o:hor20-ModesOperator",1,1%
+guicursor,"n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor/lCursor,r-cr:hor20,o:hor50",1,1%
+guicursor,"n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait600-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175",1,1%
+guicursor,"n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175",1,1%
+guicursor,"n-v-c:hor20,i-ci-ve:ver25,o:hor50",1,1%
+guicursor,"n:block-Cursor,a:block-blinkon0,i:ver25-blinkwait200-blinkoff150-blinkon200-CursorInsert,r:blinkwait200-blinkoff150-blinkon200-CursorReplace,v:CursorVisual,c:ver25-blinkon300-CursorInsert",1,1%
+guicursor,"v-sm:block-ModesVisual,i-ci-ve:ver25-ModesInsert,r-cr-o:hor20-ModesOperator",1,1%
+guifont,*default*,173,78%
+guifont,monospace:h17,8,4%
+guifont,JetBrainsMono Nerd Font Mono:h18,2,1%
+guifont,Agave:h16,1,0%
+guifont,blexmono:h17,1,0%
+guifont,Cascadia Mono PL:h13,1,0%
+guifont,Consolas:h10,1,0%
+guifont,DejaVuSansMono Nerd Font,1,0%
+guifont,DejavuSansMono NF:h16,1,0%
+guifont,FantasqueSansMono Nerd Font Mono:h16,1,0%
+guifont,Fira Code Retina:h9,1,0%
+guifont,Fira\\ Code,1,0%
+guifont,FiraCode Nerd Font Mono,1,0%
+guifont,FiraCode Nerd Font:h11,1,0%
+guifont,FiraCode Nerd Font:h15,1,0%
+guifont,FiraCode Nerd Font:h16,1,0%
+guifont,FiraCode Nerd Font:h17,1,0%
+guifont,FiraCode NFM:h15,1,0%
+guifont,FuraCode Nerd Font Mono:h12,1,0%
+guifont,Hack Nerd Font Mono:h15,1,0%
+guifont,Hack Nerd Font Mono:h18,1,0%
+guifont,Input Mono:h11.5,1,0%
+guifont,Iosevka Fixed,1,0%
+guifont,Iosevka Medium:h9,1,0%
+guifont,Iosevka Nerd Font Mono:h10,1,0%
+guifont,Iosevka Nerd Font Mono:h16,1,0%
+guifont,Iosevka Nerd Font:h10,1,0%
+guifont,JetBrains Mono:h10,1,0%
+guifont,JetBrains_Mono_SemiBold_Nerd_Font_Complete:h12,1,0%
+guifont,JetBrains_Mono:h16,1,0%
+guifont,JetBrainsMono Nerd Font Regular:h13,1,1%
+guifont,JetBrainsMono Nerd Font:h10,1,1%
+guifont,JetBrainsMono Nerd Font:h12,1,1%
+guifont,JetBrainsMono NF,1,1%
+guifont,JetBrainsMono NF:h11,1,1%
+guifont,JetBrainsMonoNL Nerd Font:h16,1,1%
+guifont,Liga SFMono Nerd Font:h12,1,1%
+guifont,Menlo:h14,1,1%
+guifont,MonoLisa_Nerd_Font:h13.6,1,1%
+guifont,MonoLisa:h12,1,1%
+guifont,monospace:h14,1,1%
+guifont,Roboto Mono Medium:h11,1,1%
+guifont,Scientifica:h15,1,1%
+guifont,SFmono Nerd Font:h15,1,1%
+guifont,"Source Code Pro_Light,:h11",1,1%
+guifont,UbuntuMono NF:h10,1,1%
+guifont,VictorMono Nerd Font:11,1,1%
+guifontwide,*default*,226,100%
+guifontwide,JetBrains_Mono_SemiBold_Nerd_Font_Complete:h12,1,0%
+helpheight,*default*,223,98%
+helpheight,12,2,1%
+helpheight,1000,1,0%
+helpheight,150,1,1%
+helplang,en,200,88%
+helplang,*default*,14,6%
+helplang,pt,3,1%
+helplang,cn,2,1%
+helplang,it,2,1%
+helplang,ru,2,1%
+helplang,es,1,0%
+helplang,fr,1,0%
+helplang,hu,1,1%
+helplang,ko,1,1%
+hidden,*default*,224,99%
+hidden,false,3,1%
+history,*default*,193,85%
+history,1000,14,6%
+history,100,10,5%
+history,500,4,2%
+history,2000,2,1%
+history,200,1,0%
+history,4096,1,0%
+history,50,1,0%
+history,5000,1,1%
+hlsearch,*default*,189,83%
+hlsearch,false,38,17%
+ignorecase,true,185,81%
+ignorecase,*default*,42,19%
+iminsert,*default*,226,100%
+iminsert,1,1,0%
+imsearch,*default*,226,100%
+imsearch,0,1,0%
+inccommand,*default*,197,87%
+inccommand,split,30,13%
+include,*default*,224,99%
+include,,2,1%
+include,"import_s.\\zs[^'\""]*\\ze""
+includeexpr,""TsIncludeExpr(v:fname)""
+indentkeys,""0{,0},0),0],0,,!^F,o,O,e",1,0%
+incsearch,*default*,224,99%
+incsearch,false,3,1%
+indentkeys,*default*,221,97%
+indentkeys,"!^F,o,O,0(,0),],},&,0=\\item ,0=\\item[,0=\\else,0=\\fi,0=\\rangle,0=\\rbrace,0=\\rvert,0=\\rVert,0=\\rfloor,0=\\rceil,0=\\urcorner",2,1%
+indentkeys,"0{,0},0),0],:,0#,!^F,o,O,e,0=end,0=until",2,1%
+indentkeys,"!^F,o,O,e",1,0%
+indentkeys,"0{,0},0),0],:,!^F,o,O,e,<:>,=elif,=except",1,1%
+infercase,*default*,220,97%
+infercase,true,7,3%
+isfname,*default*,222,98%
+isfname,"@,48-57,/,.,-,_,+,,,#,$,%,~,=,@-@",2,1%
+isfname,"@,48-57,/,.,-,_,+,#,$,%,~",2,1%
+isfname,"#,$,%,+,,,-,.,/,48-57,@,_,~",1,0%
+iskeyword,*default*,198,87%
+iskeyword,"@,48-57,_,192-255,-",27,12%
+iskeyword,"@,48-57,_,192-255,@-@,-,$",1,0%
+iskeyword,"@,48-57,192-255",1,1%
+joinspaces,*default*,226,100%
+joinspaces,true,1,0%
+jumpoptions,*default*,218,96%
+jumpoptions,stack,9,4%
+keymap,*default*,225,99%
+keymap,greek_utf-8,1,0%
+keymap,russian-jcukenmac,1,1%
+keymodel,*default*,226,100%
+keymodel,"startsel,stopsel",1,0%
+keywordprg,*default*,222,98%
+keywordprg,:help,5,2%
+langmap,*default*,225,99%
+langmap,"ёЁ;`~,№;#,йЙ;qQ,цЦ;wW,уУ;eE,кК;rR,еЕ;tT,нН;yY,гГ;uU,шШ;iI,щЩ;oO,зЗ;pP,хХ;[{,ъЪ;]},фФ;aA,ыЫ;sS,вВ;dD,аА;fF,пП;gG,рР;hH,оО;jJ,лЛ;kK,дД;lL,жЖ;\\;:,эЭ;'\\\"",яЯ;zZ,чЧ;xX,сС;cC,мМ;vV,иИ;bB,тТ;nN,ьЬ;mM,бБ;\\,<,юЮ;.>",1,0%
+langmap,"ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz",1,1%
+langmenu,*default*,226,100%
+langmenu,en,1,0%
+laststatus,3,123,54%
+laststatus,*default*,101,45%
+laststatus,0,3,1%
+lazyredraw,*default*,167,74%
+lazyredraw,true,60,26%
+leader,<Space>,150,66%
+leader,",",42,19%
+leader,*default*,25,11%
+leader,;,4,2%
+leader,\\,4,2%
+leader,',1,0%
+leader,\r,1,0%
+linebreak,*default*,149,66%
+linebreak,true,78,34%
+linespace,*default*,226,100%
+linespace,5,1,0%
+list,*default*,126,56%
+list,true,101,44%
+listchars,*default*,111,51%
+listchars,"eol:↴,nbsp:+,tab:> ,trail:-",4,2%
+listchars,"eol:↴,nbsp:+,space:⋅,tab:> ,trail:-",2,1%
+listchars,"tab:▸ ,extends:❯,precedes:❮,nbsp:␣",2,1%
+listchars,"conceal:*,extends:⟩,leadmultispace:│···,multispace:··,precedes:⟨,tab:> ,trail:~",1,0%
+listchars,"conceal:┊,eol:↲,extends:…,precedes:…,tab:» ,trail:𝁢",1,0%
+listchars,"conceal:┊,eol:↲,extends:»,nbsp:␣,precedes:«,space:·,tab:┆ ,trail:•",1,0%
+listchars,"conceal:┊,eol:↲,extends:<,nbsp:␣,precedes:>,tab:» ,trail:·",1,0%
+listchars,"conceal:┊,eol:¬,extends:…,nbsp:○,precedes:…,tab:▷ ,trail:·",1,0%
+listchars,"conceal:┊,extends:<,nbsp:␣,precedes:>,tab:» ,trail:·",1,0%
+listchars,"conceal:x,extends:…,precedes:…,tab:> ,trail: ",1,0%
+listchars,"eol:¶,tab:▸ ,trail:·",1,0%
+listchars,"eol:↲,extends:⟩,lead:␣,nbsp:␣,precedes:⟨,space:␣,tab:→ ,trail:·",1,0%
+listchars,"eol:↲,extends:→,nbsp:␣,precedes:←,space:·,tab:\\,trail:·",1,0%
+listchars,"eol:↲,extends:→,nbsp:␣,precedes:←,tab:>>>,trail:·",1,0%
+listchars,"eol:↲,extends:→,precedes:←,tab:▸ ,trail:·",1,0%
+listchars,"eol:↲,trail:·,nbsp:␣",1,0%
+listchars,"eol:↴,extends:»,nbsp:+,precedes:«,space:⋅,tab:> ,trail:-",1,0%
+listchars,"eol:↴,lead:⋅,nbsp:+,tab:> ,trail:~",1,0%
+listchars,"eol:↴,nbsp:+,tab:  ,trail:·",1,0%
+listchars,"eol:↴,space: ",1,0%
+listchars,"eol:¬,extends:…,nbsp:○,precedes:…,space:•,tab:»›,trail:≡",1,0%
+listchars,"eol:¬,extends:›,lead:⋅,multispace:⋅,precedes:‹,tab:  ,trail:•",1,0%
+listchars,"eol:¬,extends:»,precedes:«,tab:| ",1,0%
+listchars,"eol:¬,nbsp:+,tab:» ,trail:-",1,0%
+listchars,"eol:¬,space:·,tab:→-,extends:▸,precedes:◂,multispace:···⬝,leadmultispace:│   ",1,0%
+listchars,"eol:¬,tab:»·,trail:~,space:·",1,0%
+listchars,"eol:¬,tab:>·,extends:>,precedes:<,space:␣",1,0%
+listchars,"eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:⋅",1,0%
+listchars,"eol:﬋,extends:◣,nbsp:○,precedes:◢,space:⋅,tab:ﲒ ,trail:○",1,0%
+listchars,"eol:﬋,lead:·,trail:·,tab:  ,nbsp:␣,extends:»",1,0%
+listchars,"extends:…,nbsp:‗,tab:│ ,trail:·",1,0%
+listchars,"extends:…,nbsp:␣,precedes:…,tab:» ,trail:·",1,0%
+listchars,"extends:…,precedes:…,tab:  ",1,0%
+listchars,"extends:›,nbsp:·,precedes:‹,space:·,tab:» ,trail:·",1,0%
+listchars,"extends:›,nbsp:␣,precedes:‹,space: ,tab:  ,trail:·",1,0%
+listchars,"extends:»,lead:⋅,multispace:⋅ ,nbsp:░,precedes:«,tab:  ,trail:␣",1,0%
+listchars,"extends:»,lead:🞘,nbsp:␣,precedes:«,tab:˒ ,trail:·",1,0%
+listchars,"extends:»,nbsp:⦸,precedes:«,space: ,tab:▷─,trail:•",1,0%
+listchars,"extends:»,nbsp:⦸,precedes:«,tab:▷⋯",1,0%
+listchars,"extends:»,nbsp:⦸,precedes:«,tab:▷⋯,trail:•",1,0%
+listchars,"extends:»,precedes:«,tab:< >,trail:-",1,0%
+listchars,"extends:⟩,nbsp:␣,precedes:⟨,tab:│→,trail:·",1,0%
+listchars,"extends:❯,nbsp:·,precedes:❮,tab:▸-,trail:…",1,0%
+listchars,"extends:❯,nbsp:␣,precedes:❮,space: ,tab: ,trail:•",1,0%
+listchars,"extends:#,nbsp:·,tab:▸·,trail:·",1,0%
+listchars,"extends:→,nbsp:+,precedes:←,tab:»·,trail:·",1,0%
+listchars,"extends:→,nbsp:␣,precedes:←,tab:»·,trail:·",1,0%
+listchars,"extends:>,leadmultispace:·,nbsp:+,precedes:<,tab:>-,trail:×",1,0%
+listchars,"extends:▶,nbsp:∙,precedes:◀,tab:▶‒,trail:∙",1,0%
+listchars,"extends:◣,lead:⋅,nbsp:○,precedes:◢,tab:-->,trail:·",1,0%
+listchars,"lead:·,tab:| ,trail:·",1,0%
+listchars,"lead:⋅,nbsp:+,tab:> ,trail:-",1,0%
+listchars,"nbsp:·,tab:→ ,trail:·",1,0%
+listchars,"nbsp:⸱,tab:| ,trail:⎵",1,0%
+listchars,nbsp:+,1,0%
+listchars,"nbsp:+,space:·,tab:<->,trail:·",1,0%
+listchars,"nbsp:+,space:·,tab:>-,trail:-",1,0%
+listchars,"nbsp:+,tab:▸ ,trail:·",1,0%
+listchars,"nbsp:⋅,tab:» ,trail:⋅",1,0%
+listchars,"nbsp:␣,trail:·,extends:>,precedes:<,tab:  ,eol:↲",1,0%
+listchars,"space:·,tab:-->,eol:↩",1,0%
+listchars,"space:·,tab:» ",1,0%
+listchars,tab:  ,1,0%
+listchars,"tab:  ,extends:→,precedes:←,nbsp:␣",1,0%
+listchars,"tab:--▸,eol:¬,trail:⋅,extends:❯,precedes:❮,nbsp:%",1,0%
+listchars,"tab:··,trail:·",1,0%
+listchars,"tab:» ,nbsp:␣,trail:•,extends:›,precedes:‹",1,1%
+listchars,"tab:» ,trail:·,extends:>,precedes:<",1,1%
+listchars,"tab:» ,trail:·,space:·,nbsp:·,precedes:⟨,extends:⟩",1,1%
+listchars,"tab:»·,nbsp:+,trail:·,extends:→,precedes:←",1,1%
+listchars,"tab:»»,trail:·,nbsp:·",1,1%
+listchars,"tab:→ ,eol:↲,nbsp:␣,space:•",1,1%
+listchars,"tab:→ ,eol:₋,extends:⟩,precedes:⟨,trail:·,space:·",1,1%
+listchars,"tab:→ ,nbsp:␣,trail:~,precedes:«,extends:»",1,1%
+listchars,"tab:→ ,trail:·",1,1%
+listchars,"tab:⇥ ,eol:$,trail:·,extends:>,precedes:<",1,1%
+listchars,"tab:> ,multispace:·   ,lead:·,trail:·,extends:⇢,precedes:⇠,nbsp:+",1,1%
+listchars,"tab:> ,trail: ,eol:↲",1,1%
+listchars,"tab:> ,trail:-,nbsp:+,eol:↴",1,1%
+listchars,"tab:> ,trail:-,nbsp:+,eol:¬,trail:·,precedes:◂,extends:▸",1,1%
+listchars,"tab:> ,trail:•",1,1%
+listchars,tab:>-,1,1%
+listchars,"tab:>-,trail:-,extends:>,precedes:<,nbsp:+",1,1%
+listchars,"tab:>-,trail:-,precedes:<,extends:>",1,1%
+listchars,"tab:>-,trail:×,nbsp:+",1,1%
+listchars,"tab:>-,trail:x,extends:>,precedes:<,nbsp:+,leadmultispace:.",1,1%
+listchars,tab:>.,1,1%
+listchars,"tab:>.,eol:$",1,1%
+listchars,"tab:>⋅,trail:·,extends:▷,precedes:◁,nbsp:␣",1,1%
+listchars,tab:| ,1,1%
+listchars,"tab:| ,lead:.,trail:$",1,1%
+listchars,"tab:| ,nbsp:_,trail:·,space:·",1,1%
+listchars,"tab:| ,trail:-,nbsp:+,extends:>",1,1%
+listchars,"tab:│ ,trail:·",1,1%
+listchars,"tab:▷‒,nbsp:␣,trail:•",1,1%
+listchars,"tab:▸ ,extends:❯,precedes:❮,trail:·",1,1%
+listchars,"tab:▸ ,trail:·",1,1%
+listchars,"tab:▸ ,trail:·,eol:¶",1,1%
+listchars,"tab:▸ ,trail:¬,nbsp:.,extends:❯,precedes:❮",1,1%
+listchars,"tab:▸ ,trail:⋅,extends:❯,precedes:❮",1,1%
+listchars,"tab:▸·,extends:❯,precedes:❮,nbsp:⁓",1,1%
+listchars,"tab:▸·,trail:·",1,1%
+listchars,"tab:▸\\ ,eol:¬,trail:·",1,1%
+listchars,"tab: ,space:·,trail:*",1,1%
+listchars,"trail:-,precedes:«,extends:»,tab:  ",1,1%
+listchars,trail:.,1,1%
+listchars,trail:·,1,1%
+listchars,"trail:·,nbsp:~,tab:>-,multispace:---+",1,1%
+listchars,"trail:·,nbsp:␣,tab:  ",1,1%
+listchars,"trail:·,tab:»·,eol:↲,multispace:   |,extends:>,precedes:<",1,1%
+listchars,"trail:·,tab:‣ ,extends:,precedes:,nbsp:␣",1,1%
+localleader,*default*,226,100%
+localleader,\,1,0%
+matchpairs,*default*,213,94%
+matchpairs,"(:),{:},[:],<:>",11,5%
+matchpairs,"(:),{:},[:],<:>,「:」,『:』,【:】,“:”,‘:’,《:》",2,1%
+matchpairs,"(:),{:},[:],«:»",1,0%
+matchtime,*default*,222,98%
+matchtime,2,3,1%
+matchtime,0,1,0%
+matchtime,3,1,1%
+maxmempattern,*default*,226,100%
+maxmempattern,10000,1,0%
+menuitems,*default*,226,100%
+menuitems,50,1,0%
+modelines,*default*,224,99%
+modelines,1,3,1%
+mouse,a,132,58%
+mouse,*default*,50,22%
+mouse,,25,11%
+mouse,nv,9,4%
+mouse,n,2,1%
+mouse,nic,2,1%
+mouse,ar,1,0%
+mouse,nicr,1,0%
+mouse,nicra,1,0%
+mouse,nvc,1,0%
+mouse,nvia,1,1%
+mouse,v,1,1%
+mouse,vn,1,1%
+mousefocus,*default*,225,99%
+mousefocus,true,2,1%
+mousemodel,*default*,216,95%
+mousemodel,extend,8,4%
+mousemodel,popup,3,1%
+mousemoveevent,*default*,223,100%
+mousemoveevent,true,1,0%
+mousescroll,*default*,218,98%
+mousescroll,"ver:1,hor:6",2,1%
+mousescroll,"ver:1,hor:1",1,0%
+mousescroll,"ver:1,hor:3",1,0%
+mousescroll,"ver:3,hor:1",1,0%
+mousescroll,"ver:5,hor:4",1,1%
+neovim_version,0.9.0,101,45%
+neovim_version,0.8.1,78,34%
+neovim_version,0.8.0,43,19%
+neovim_version,0.7.0,2,1%
+neovim_version,0.8.2,2,1%
+neovim_version,0.7.2,1,0%
+nrformats,*default*,221,98%
+nrformats,"bin,hex,alpha",2,1%
+nrformats,"alpha,bin,hex,unsigned",1,0%
+nrformats,bin,1,0%
+nrformats,"bin,hex,unsigned",1,0%
+nrformats,hex,1,1%
+number,true,196,86%
+number,*default*,31,14%
+numberwidth,*default*,197,87%
+numberwidth,2,10,4%
+numberwidth,1,9,4%
+numberwidth,3,7,3%
+numberwidth,5,4,2%
+omnifunc,*default*,221,97%
+omnifunc,syntaxcomplete#Complete,2,1%
+omnifunc,v:lua.vim.lsp.omnifunc,2,1%
+omnifunc,ale#completion#OmniFunc,1,0%
+omnifunc,v:lua.MiniCompletion.completefunc_lsp,1,1%
+operatorfunc,*default*,221,97%
+operatorfunc,ReplaceWithRegister#Operator,2,1%
+operatorfunc,v:lua.require'gitsigns.repeat'.repeat_action,2,1%
+operatorfunc,<SNR>15_go,1,0%
+operatorfunc,v:lua.require'nvim-surround'.normal_callback,1,1%
+pastetoggle,*default*,213,94%
+pastetoggle,<F12>,3,1%
+pastetoggle,<F2>,2,1%
+pastetoggle,",cp",1,0%
+pastetoggle,<F1>,1,0%
+pastetoggle,<F10>,1,0%
+pastetoggle,<F11>,1,0%
+pastetoggle,<F3>,1,0%
+pastetoggle,<F4>,1,1%
+pastetoggle,<F8>,1,1%
+pastetoggle,<F9>,1,1%
+pastetoggle,<Plug>PasteToggle,1,1%
+preserveindent,*default*,224,99%
+preserveindent,true,3,1%
+previewheight,*default*,223,98%
+previewheight,25,1,0%
+previewheight,5,1,0%
+previewheight,6,1,1%
+previewheight,9,1,1%
+printoptions,*default*,226,100%
+printoptions,"left:8pc,right:3pc",1,0%
+pumblend,*default*,195,86%
+pumblend,10,16,7%
+pumblend,20,5,2%
+pumblend,15,3,1%
+pumblend,30,3,1%
+pumblend,5,3,1%
+pumblend,17,1,1%
+pumblend,8,1,1%
+pumheight,*default*,163,72%
+pumheight,10,41,18%
+pumheight,15,8,4%
+pumheight,12,5,2%
+pumheight,8,2,1%
+pumheight,13,1,0%
+pumheight,16,1,0%
+pumheight,18,1,0%
+pumheight,20,1,0%
+pumheight,35,1,0%
+pumheight,5,1,1%
+pumheight,50,1,1%
+pumheight,9,1,1%
+pumwidth,*default*,226,100%
+pumwidth,25,1,0%
+quickfixtextfunc,*default*,219,97%
+quickfixtextfunc,PqfQuickfixTextFunc,5,2%
+quickfixtextfunc,{info -> v:lua._G.qftf(info)},2,1%
+quickfixtextfunc,"'{info -> v:lua.require(""quickfix"").format(info)}'",1,0%
+redrawtime,*default*,222,98%
+redrawtime,1500,4,2%
+redrawtime,1000,1,0%
+regexpengine,*default*,226,100%
+regexpengine,1,1,0%
+relativenumber,true,135,59%
+relativenumber,*default*,92,41%
+report,*default*,222,98%
+report,0,5,2%
+ruler,*default*,201,88%
+ruler,false,26,12%
+rulerformat,*default*,225,99%
+rulerformat,%=%c,1,0%
+rulerformat,"%30(%=:b%n%y%m%r%w %l,%c%V %P%)",1,1%
+scrollback,*default*,223,98%
+scrollback,100,1,0%
+scrollback,1000,1,0%
+scrollback,100000,1,1%
+scrollback,20000,1,1%
+scrolljump,*default*,222,98%
+scrolljump,5,4,2%
+scrolljump,2,1,0%
+scrolloff,*default*,60,27%
+scrolloff,8,38,17%
+scrolloff,3,28,12%
+scrolloff,5,27,12%
+scrolloff,4,18,8%
+scrolloff,10,13,6%
+scrolloff,2,9,4%
+scrolloff,6,6,3%
+scrolloff,7,6,3%
+scrolloff,1,5,2%
+scrolloff,999,4,2%
+scrolloff,12,3,1%
+scrolloff,9,3,1%
+scrolloff,20,2,1%
+scrolloff,15,1,0%
+scrolloff,35,1,0%
+scrolloff,41,1,0%
+scrolloff,50,1,0%
+scrolloff,9999,1,1%
+scrollopt,*default*,223,98%
+scrollopt,"ver,jump,hor",3,1%
+scrollopt,"ver,hor,jump",1,1%
+secure,*default*,217,96%
+secure,true,10,4%
+selection,*default*,225,99%
+selection,exclusive,2,1%
+selectmode,*default*,226,100%
+selectmode,key,1,0%
+sessionoptions,*default*,196,87%
+sessionoptions,"blank,buffers,curdir,folds,help,tabpages,winsize,terminal,globals",3,1%
+sessionoptions,"blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal",3,1%
+sessionoptions,"curdir,help,tabpages,winsize",3,1%
+sessionoptions,"blank,buffers,curdir,folds,help,tabpages,winsize,terminal,winpos",2,1%
+sessionoptions,buffers,2,1%
+sessionoptions,"blank,buffers,curdir,folds,help,resize,tabpages,winsize",1,0%
+sessionoptions,"blank,buffers,curdir,folds,help,tabpages,winsize,options,localoptions,resize,terminal,winpos",1,0%
+sessionoptions,"blank,buffers,curdir,folds,help,tabpages,winsize,terminal,blank,buffers,curdir,folds,help,options,winsize,resize,unix,slash",1,0%
+sessionoptions,"blank,buffers,curdir,folds,help,tabpages,winsize,terminal,tabpages,globals",1,0%
+sessionoptions,"blank,buffers,curdir,folds,help,tabpages,winsize,winpos",1,0%
+sessionoptions,"blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions",1,0%
+sessionoptions,"blank,buffers,curdir,help,terminal",1,0%
+sessionoptions,"blank,buffers,tabpages,curdir,folds,resize,winpos,winsize",1,0%
+sessionoptions,"blank,curdir,folds,help,tabpages,winsize,terminal,resize,winpos",1,0%
+sessionoptions,"blank,curdir,folds,tabpages",1,0%
+sessionoptions,"blank,curdir,help,tabpages,winsize,terminal",1,1%
+sessionoptions,"buffers,curdir,folds,help,tabpages,winsize,terminal",1,1%
+sessionoptions,"buffers,curdir,folds,help,tabpages,winsize,winpos,terminal",1,1%
+sessionoptions,"buffers,curdir,folds,tabpages,winpos,winsize,terminal",1,1%
+sessionoptions,"buffers,curdir,folds,tabpages,winsize",1,1%
+sessionoptions,"buffers,curdir,folds,winpos,winsize,localoptions",1,1%
+sessionoptions,"buffers,curdir,tabpages,winsize",1,1%
+sessionoptions,"help,tabpages",1,1%
+shada,*default*,211,93%
+shada,"!,'1000,<50,s10,h",3,1%
+shada,"!,'300,<50,@100,s10,h",2,1%
+shada,"!,'100,<30,:50,@50,/50,s10,h",1,0%
+shada,"!,'1000,<1000,s1000,h",1,0%
+shada,"!,'1000,<50,s100",1,0%
+shada,"!,'1000,f1,<1000,h,%",1,0%
+shada,"!,'150,<50,s30,h,r/tmp,r/run,rterm://,rfugitive://,rfern://,rman://",1,0%
+shada,"'0,<0,f0,s10,:100,@100,h,/0",1,0%
+shada,"'100,/0,<0,s10",1,1%
+shada,"'100,f100,h",1,1%
+shada,"'100,h,rman:,rocto:,rterm:,r/nix/,r/private/tmp/,r/private/var/",1,1%
+shada,"'100,s10,/1000,:1000,h",1,1%
+shada,"'2000,f1,<1000,:200,@100,/100,%20",1,1%
+shadafile,*default*,223,98%
+shadafile,.vim/main.shada,1,0%
+shadafile,/home/username/.local/share/nvim/shada/main.shada,1,0%
+shadafile,/Users/(username)/.cache/lvim/lvim.shada,1,1%
+shadafile,~HOME/.local/state/avim/shada/avim.shada,1,1%
+shell,*default*,207,91%
+shell,zsh,5,2%
+shell,/bin/bash,4,2%
+shell,bash,4,2%
+shell,fish,2,1%
+shell,/bin/zsh,1,0%
+shell,/usr/local/bin/zsh,1,0%
+shell,bash --login,1,0%
+shell,pwsh,1,1%
+shell,pwsh.exe,1,1%
+shellcmdflag,*default*,225,99%
+shellcmdflag,-c,1,0%
+shellcmdflag,-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command ,1,1%
+shellpipe,*default*,226,100%
+shellpipe,2>&1 | Out-File -Encoding UTF8 %s,1,0%
+shellredir,*default*,226,100%
+shellredir,2>&1 | Out-File -Encoding UTF8 %s,1,0%
+shellslash,*default*,226,100%
+shellslash,true,1,0%
+shelltemp,*default*,225,99%
+shelltemp,false,2,1%
+shellxquote,*default*,225,99%
+shellxquote,,2,1%
+shiftround,*default*,182,80%
+shiftround,true,45,20%
+shiftwidth,4,101,45%
+shiftwidth,2,96,42%
+shiftwidth,0,14,6%
+shiftwidth,*default*,14,6%
+shiftwidth,3,2,1%
+shortmess,*default*,85,39%
+shortmess,filnxtToOFc,20,9%
+shortmess,filnxtToOFI,8,4%
+shortmess,filnxtToOFA,4,2%
+shortmess,filnxtToOFcI,4,2%
+shortmess,c,2,1%
+shortmess,filnxtToOFAI,2,1%
+shortmess,filnxtToOFcSI,2,1%
+shortmess,filnxtToOFs,2,1%
+shortmess,acFItWTo,1,0%
+shortmess,acoOsSWIF,1,0%
+shortmess,afilnxtToOFcI,1,0%
+shortmess,aFOTcoI,1,0%
+shortmess,aoOFc,1,0%
+shortmess,aoOstTWAcF,1,0%
+shortmess,aoOstTWcFS,1,0%
+shortmess,aoOTIc,1,0%
+shortmess,aoOTIcF,1,0%
+shortmess,atIAcW,1,0%
+shortmess,atToOFc,1,0%
+shortmess,atToOFcA,1,0%
+shortmess,atToOIc,1,0%
+shortmess,caAOstT,1,0%
+shortmess,cFfAIsOTWtmo,1,0%
+shortmess,cFxiloOtTnf,1,0%
+shortmess,ciItfFolsTOxSn,1,0%
+shortmess,csF,1,0%
+shortmess,FacItTs,1,0%
+shortmess,FftTioncxOl,1,0%
+shortmess,ficTxolOtFn,1,0%
+shortmess,filnxrtToOF,1,0%
+shortmess,filnxtaoOsTIcF,1,0%
+shortmess,filnxtToOc,1,0%
+shortmess,filnxtToOFAc,1,0%
+shortmess,filnxtToOFacI,1,0%
+shortmess,filnxtToOFcs,1,0%
+shortmess,filnxtToOFcS,1,0%
+shortmess,filnxtToOFIc,1,0%
+shortmess,filnxtToOFSI,1,0%
+shortmess,filnxtToOFWIcC,1,0%
+shortmess,finxtToOFIl,1,0%
+shortmess,fiOcoTlxtFn,1,0%
+shortmess,FofiIxsTOlnt,1,0%
+shortmess,fxticTlOoFn,1,0%
+shortmess,IFaWcs,1,0%
+shortmess,ifnITFstOolx,1,0%
+shortmess,ifTOIoFxtln,1,0%
+shortmess,infoOTFaxWlAtsI,1,0%
+shortmess,inlotfcxTOF,1,0%
+shortmess,inOSotsFcxTlf,1,0%
+shortmess,IoFftOnilTx,1,0%
+shortmess,ioTOFtcxfnl,1,0%
+shortmess,ioTOltFnfcxS,1,0%
+shortmess,iOxltcTFonf,1,0%
+shortmess,ITF,1,0%
+shortmess,itFnfOxcoTl,1,0%
+shortmess,itnflcoFTxO,1,0%
+shortmess,lFnoTOcixft,1,0%
+shortmess,lFtxOcionfT,1,0%
+shortmess,lFxcTiotOnf,1,0%
+shortmess,lFxtcifTOnoA,1,0%
+shortmess,lFxTOitcnfo,1,0%
+shortmess,litSnxcfoCOaIsFT,1,0%
+shortmess,litxnfoTOIsF,1,0%
+shortmess,lnOxcoTFift,1,0%
+shortmess,lOtnfFxociT,1,0%
+shortmess,lotTnfxIisOF,1,0%
+shortmess,ltncxoifOFT,1,1%
+shortmess,ltTnfxoicOF,1,1%
+shortmess,nfFxociOTltA,1,1%
+shortmess,nfFxTOilcto,1,1%
+shortmess,nficIoTOlxtF,1,1%
+shortmess,nfTOoiclxtF,1,1%
+shortmess,ocintlxFTOf,1,1%
+shortmess,oFcxtnfIiTOl,1,1%
+shortmess,OIciFxlotTnf,1,1%
+shortmess,olTxFnfitcO,1,1%
+shortmess,omsFOxItrnfcliT,1,1%
+shortmess,OnfoFcxlitT,1,1%
+shortmess,oOnfTxIWcisFtl,1,1%
+shortmess,otcTOnixfl,1,1%
+shortmess,otFnfOcTlix,1,1%
+shortmess,oTOFnfWclixt,1,1%
+shortmess,oTOlFxtfnai,1,1%
+shortmess,slctFnfxioTOI,1,1%
+shortmess,tFfTiOIsnolx,1,1%
+shortmess,tFnxTOiWcsfol,1,1%
+shortmess,tfxcloTOAiFn,1,1%
+shortmess,tIsoOxlinFTf,1,1%
+shortmess,TnclFxoOift,1,1%
+shortmess,tnfxisFoTOIl,1,1%
+shortmess,toflsiOInTFx,1,1%
+shortmess,TOioltxFfnc,1,1%
+shortmess,TOltFnfIocxi,1,1%
+shortmess,TOoxaAiItfnclF,1,1%
+shortmess,TOtnfxcolFi,1,1%
+shortmess,TtIcoOlfFinx,1,1%
+shortmess,xFciftOnoTl,1,1%
+shortmess,xflTiOonFSt,1,1%
+shortmess,xictolTOFnf,1,1%
+shortmess,xilcTFofntO,1,1%
+shortmess,xltFifOocTn,1,1%
+shortmess,xltnfFTicoOI,1,1%
+shortmess,xnfiOsTlIoFt,1,1%
+shortmess,xTcilftFnoO,1,1%
+shortmess,xtnfOcloiFT,1,1%
+shortmess,xTOiclFtonf,1,1%
+showbreak,*default*,177,79%
+showbreak,↪,7,3%
+showbreak,↪ ,5,2%
+showbreak,↳ ,5,2%
+showbreak,   ,4,2%
+showbreak,↳,4,2%
+showbreak,↳  ,3,1%
+showbreak,> ,2,1%
+showbreak,    ,1,0%
+showbreak, …,1,0%
+showbreak, > ,1,0%
+showbreak, ⌇ ,1,0%
+showbreak,->,1,0%
+showbreak,… ,1,0%
+showbreak,›››,1,0%
+showbreak,\\\\,1,0%
+showbreak,\\\\\\,1,0%
+showbreak,\\\\\\\\\\,1,0%
+showbreak,↪ ,1,0%
+showbreak,↳   ,1,0%
+showbreak,+,1,1%
+showbreak,|-> ,1,1%
+showbreak,|>,1,1%
+showbreak,⋯,1,1%
+showbreak,│,1,1%
+showbreak,❧,1,1%
+showbreak,⮑  ,1,1%
+showbreak,﬌ ,1,1%
+showcmd,*default*,214,94%
+showcmd,false,13,6%
+showfulltag,*default*,225,99%
+showfulltag,true,2,1%
+showmatch,*default*,179,79%
+showmatch,true,48,21%
+showmode,false,129,57%
+showmode,*default*,98,43%
+showtabline,*default*,113,50%
+showtabline,2,96,42%
+showtabline,0,18,8%
+sidescroll,*default*,218,96%
+sidescroll,5,3,1%
+sidescroll,2,2,1%
+sidescroll,20,1,0%
+sidescroll,3,1,0%
+sidescroll,4,1,1%
+sidescroll,6,1,1%
+sidescrolloff,*default*,152,67%
+sidescrolloff,8,24,11%
+sidescrolloff,5,21,9%
+sidescrolloff,15,7,3%
+sidescrolloff,10,6,3%
+sidescrolloff,4,5,2%
+sidescrolloff,6,3,1%
+sidescrolloff,12,2,1%
+sidescrolloff,2,2,1%
+sidescrolloff,1,1,0%
+sidescrolloff,16,1,0%
+sidescrolloff,25,1,0%
+sidescrolloff,3,1,1%
+sidescrolloff,40,1,1%
+signcolumn,yes,106,47%
+signcolumn,*default*,76,34%
+signcolumn,number,14,6%
+signcolumn,yes:1,14,6%
+signcolumn,yes:2,7,3%
+signcolumn,no,3,1%
+signcolumn,yes:3,3,1%
+signcolumn,auto:1,1,0%
+signcolumn,auto:1-2,1,0%
+signcolumn,auto:1-3,1,1%
+signcolumn,auto:2-9,1,1%
+smartcase,true,183,81%
+smartcase,*default*,44,19%
+smartindent,*default*,133,59%
+smartindent,true,94,41%
+smarttab,*default*,224,99%
+smarttab,false,3,1%
+softtabstop,*default*,100,44%
+softtabstop,4,64,28%
+softtabstop,2,53,23%
+softtabstop,-1,9,4%
+softtabstop,8,1,1%
+spell,*default*,214,94%
+spell,true,13,6%
+spellcapcheck,*default*,225,99%
+spellcapcheck,,2,1%
+spelllang,*default*,187,83%
+spelllang,en_us,7,3%
+spelllang,en_gb,6,3%
+spelllang,"en,cjk",6,3%
+spelllang,"en_us,pt_br",2,1%
+spelllang,"en,de",2,1%
+spelllang,"de,en",1,0%
+spelllang,"el,en",1,0%
+spelllang,"en_gb,en",1,0%
+spelllang,"en_gb,en_us,de_20",1,0%
+spelllang,"en_us,de_at,names,science",1,0%
+spelllang,"en_us,nl",1,0%
+spelllang,"en_us,ru_yo",1,0%
+spelllang,"en,af",1,0%
+spelllang,"en,es",1,0%
+spelllang,"en,nl",1,0%
+spelllang,"en,pl",1,0%
+spelllang,"en,ru",1,1%
+spelllang,fr,1,1%
+spelllang,"pl,en",1,1%
+spelllang,pt,1,1%
+spelllang,"pt,en",1,1%
+spelllang,"sv,en_gb",1,1%
+spelloptions,*default*,215,95%
+spelloptions,camel,10,4%
+spelloptions,"camel,noplainbuffer",2,1%
+spellsuggest,*default*,222,98%
+spellsuggest,"best,9",2,1%
+spellsuggest,30,1,0%
+spellsuggest,"best,10",1,0%
+spellsuggest,"best,8",1,1%
+splitbelow,true,155,68%
+splitbelow,*default*,72,32%
+splitkeep,*default*,81,80%
+splitkeep,screen,18,18%
+splitkeep,topline,2,2%
+splitright,true,161,71%
+splitright,*default*,66,29%
+startofline,*default*,224,99%
+startofline,true,3,1%
+statusline,%#Normal#,126,56%
+statusline,*default*,23,10%
+statusline,%{%v:lua.require'feline'.generate_statusline()%},20,9%
+statusline,%!v:lua.MiniStatusline.active(),9,4%
+statusline,%{%v:lua.require'heirline'.eval_statusline()%},6,3%
+statusline,%!airline#statusline(1),4,2%
+statusline,%!v:lua.require('nvchad_ui').statusline(),2,1%
+statusline,"%{coc#status()}%{get(b:,'coc_current_function','')}",2,1%
+statusline," %{v:lua.Statusline_Filename()} %y%< | %{v:lua.Statusline_Getcwd()}%*%=%m%{v:lua.Statusline_DiagnosticStatus()}%{v:lua.Statusline_SpellingErrorCount()}%{v:lua.Statusline_GitSigns()} | %{v:lua.Statusline_Indent()}%{v:lua.Statusline_Fileencoding()}%{&fileformat!=#'unix'?',ff='.&fileformat:''}%R%{v:lua.Statusline_Wrappingmode()}%{&spell?',S':''}%{v:lua.Statusline_FeaturesEnabled()}%{v:lua.Statusline_List()} | %l/%L,%c ",1,0%
+statusline,"'%!luaeval(""__.statusline.get_active_statusline()"")'",1,0%
+statusline,"'%{lightline#link()}%#LightlineLeft_active_0#%( %{lightline#mode()} %)%{(&paste)?""|"":""""}%( %{&paste?""PASTE"":""""} %)%#LightlineLeft_active_0_1#%#LightlineLeft_active_1#%( %{coc#status()} %)%{coc#status()!=#""""&&((&readonly)||1||(&modified||!&modifiable))?""|"":""""}%( %R %)%{(&readonly)&&(1||(&modified||!&modifiable))?""|"":""""}%( %t %)%{(&modified||!&modifiable)?""|"":""""}%( %M %)%#LightlineLeft_active_1_2#%#LightlineMiddle_active#%=%#LightlineRight_active_2_3#%#LightlineRight_active_2#%( %{&ff} %)%{1||1?""|"":""""}%( %{&fenc!=#""""?&fenc:&enc} %)%{1?""|"":""""}%( %{&ft!=#""""?&ft:""no ft""} %)%#LightlineRight_active_1_2#%#LightlineRight_active_1#%( %3p%% %)%#LightlineRight_active_0_1#%#LightlineRight_active_0#%( %3l:%-2c %)'",1,0%
+statusline,"'%{lightline#link()}%#LightlineLeft_active_0#%( %{lightline#mode()} %)%{(&paste)?""|"":""""}%( %{&paste?""PASTE"":""""} %)%#LightlineLeft_active_0_1#%#LightlineLeft_active_1#%( %R %)%{(&readonly)&&(1||(&modified||!&modifiable))?""|"":""""}%( %t %)%{(&modified||!&modifiable)?""|"":""""}%( %M %)%#LightlineLeft_active_1_2#%#LightlineLeft_active_2#%( %{FugitiveHead()} %)%#LightlineLeft_active_2_3#%#LightlineMiddle_active#%=%#LightlineRight_active_2_3#%#LightlineRight_active_2#%( %{&ff} %)%{1||1?""|"":""""}%( %{&fenc!=#""""?&fenc:&enc} %)%{1?""|"":""""}%( %{&ft!=#""""?&ft:""no ft""} %)%#LightlineRight_active_1_2#%#LightlineRight_active_1#%( %3p%% %)%#LightlineRight_active_0_1#%#LightlineRight_active_0#%( %3l:%-2c %)'",1,0%
+statusline,"'%{lightline#link()}%#LightlineLeft_active_0#%( %{lightline#mode()} %)%{(&paste)?"""":""""}%( %{&paste?""PASTE"":""""} %)%#LightlineLeft_active_0_1#%#LightlineLeft_active_1#%( %{LightlineFugitive()} %)%{LightlineFugitive()!=#""""&&(LightlineReadonly()!=#""""||1||(&modified||!&modifiable)||exists(""*coc#status"")&&coc#status()!=#""""||CocCurrentFunction()!=#"""")?"""":""""}%( %{LightlineReadonly()} %)%{LightlineReadonly()!=#""""&&(1||(&modified||!&modifiable)||exists(""*coc#status"")&&coc#status()!=#""""||CocCurrentFunction()!=#"""")?"""":""""}%( %t %)%{(&modified||!&modifiable)||exists(""*coc#status"")&&coc#status()!=#""""||CocCurrentFunction()!=#""""?"""":""""}%( %M %)%{(&modified||!&modifiable)&&(exists(""*coc#status"")&&coc#status()!=#""""||CocCurrentFunction()!=#"""")?"""":""""}%( %{exists(""*coc#status"")?coc#status():""""} %)%{exists(""*coc#status"")&&coc#status()!=#""""&&(CocCurrentFunction()!=#"""")?"""":""""}%( %{CocCurrentFunction()} %)%#LightlineLeft_active_1_2#%#LightlineMiddle_active#%=%#LightlineRight_active_2_3#%#LightlineRight_active_2#%( %{&ff} %)%{1||1?"""":""""}%( %{&fenc!=#""""?&fenc:&enc} %)%{1?"""":""""}%( %{&ft!=#""""?&ft:""no ft""} %)%#LightlineRight_active_1_2#%#LightlineRight_active_1#%( %3p%% %)%#LightlineRight_active_0_1#%#LightlineRight_active_0#%(  %3l:%-2v %)'",1,0%
+statusline,%!airline#statusline(2),1,0%
+statusline,"%!luaeval('require(\""el\"").run(1000)')",1,0%
+statusline,"%!luaeval('require(\""mesopotamia.statusline_winbar\"").super_custom_status_line()')",1,0%
+statusline,%!luaeval('STATUS(vim.g.statusline_winid)'),1,0%
+statusline,%!Status(1),1,0%
+statusline,%!STLFunc(),1,0%
+statusline,%!v:lua.L.statusline.apply(),1,0%
+statusline,%!v:lua.require'locals.awesome.statusline'.render(),1,0%
+statusline,%!v:lua.Statusline.statusline(),1,0%
+statusline,%!v:lua.Statusline(),1,0%
+statusline,"%!v:lua.WindLine.show(6,1000)",1,0%
+statusline,"%{%luaeval('require(\""hardline\"").update_statusline(true)')%}",1,0%
+statusline,%{%v:lua.QuackStatus()%},1,0%
+statusline,%{%v:lua.require'nvim-navic'.get_location()%},1,0%
+statusline,%{%v:lua.require'status-line'(v:true)%},1,0%
+statusline,%{%v:lua.require('lines.statusline').statusline()%},1,0%
+statusline,%{%v:lua.Status_Line()%},1,1%
+statusline,%{%v:lua.status.get_statusline()%},1,1%
+statusline,%{%v:lua.string.upper(v:lua.vim.fn.mode())%} %.30F %m%r%y%= %c %l/%L %P,1,1%
+statusline,%{FugitiveStatusline()}%< %t%m%< %h%< %r%< %w%=%l%=%p%%,1,1%
+statusline,"%{lightline#link()}%#LightlineLeft_active_0#%( %{lightline#mode()} %)%{(&paste)?\""|\"":\""\""}%( %{&paste?\""PASTE\"":\""\""} %)%#LightlineLeft_active_0_1#%#LightlineLeft_active_1#%( %{pathshorten(fnamemodify(getcwd(), ':~'))} %)%{(expand('%:h') != '' && expand('%:h') != '.')||exists(\""*fugitive#head\"")&&fugitive#head()!=#\""\""||(&readonly)||1||(&modified||!&modifiable)||(len(luaeval('__other_buffers()')) > 0)?\""|\"":\""\""}%( %{luaeval('sl_reldir()')} %)%{(expand('%:h') != '' && expand('%:h') != '.')&&(exists(\""*fugitive#head\"")&&fugitive#head()!=#\""\""||(&readonly)||1||(&modified||!&modifiable)||(len(luaeval('__other_buffers()')) > 0))?\""|\"":\""\""}%( %{exists(\""*fugitive#head\"")?fugitive#head():\""\""} %)%{exists(\""*fugitive#head\"")&&fugitive#head()!=#\""\""&&((&readonly)||1||(&modified||!&modifiable)||(len(luaeval('__other_buffers()')) > 0))?\""|\"":\""\""}%( %R %)%{(&readonly)&&(1||(&modified||!&modifiable)||(len(luaeval('__other_buffers()')) > 0))?\""|\"":\""\""}%( %t %)%{(&modified||!&modifiable)||(len(luaeval('__other_buffers()')) > 0)?\""|\"":\""\""}%( %M %)%{(&modified||!&modifiable)&&((len(luaeval('__other_buffers()')) > 0))?\""|\"":\""\""}%( %{luaeval('sl_other_buffers()')} %)%#LightlineLeft_active_1_2#%#LightlineMiddle_active#%=%#LightlineRight_active_2_3#%#LightlineRight_active_2#%( %{&ff} %)%{1||1?\""|\"":\""\""}%( %{&fenc!=#\""\""?&fenc:&enc} %)%{1?\""|\"":\""\""}%( %{&ft!=#\""\""?&ft:\""no ft\""} %)%#LightlineRight_active_1_2#%#LightlineRight_active_1#%( %{&ft=='pandoc'?wordcount().words:''} %)%#LightlineRight_active_0_1#%#LightlineRight_active_0#%( %3l:%-2c %)",1,1%
+statusline,"%#Ponton_void#%{%luaeval('require(\""ponton\"").segment')(\""void\"")%}%#Ponton_mode_margin_left# %#Ponton_mode#%{%luaeval('require(\""ponton\"").segment')(\""mode\"")%}%#Ponton_mode_margin_right# %#Ponton_buffer_changed#%{%luaeval('require(\""ponton\"").segment')(\""buffer_changed\"")%}%#Ponton_git_branch#%{%luaeval('require(\""ponton\"").segment')(\""git_branch\"")%}%#Ponton_spacer#%=%#Ponton_lsp_spinner#%{%luaeval('require(\""ponton\"").segment')(\""lsp_spinner\"")%}%#Ponton_lsp_error#%{%luaeval('require(\""ponton\"").segment')(\""lsp_error\"")%}%#Ponton_lsp_warning#%{%luaeval('require(\""ponton\"").segment')(\""lsp_warning\"")%}%#Ponton_lsp_information#%{%luaeval('require(\""ponton\"").segment')(\""lsp_information\"")%}%#Ponton_lsp_hint#%{%luaeval('require(\""ponton\"").segment')(\""lsp_hint\"")%}%#Ponton_line#%{%luaeval('require(\""ponton\"").segment')(\""line\"")%}%#Ponton_sep#%{%luaeval('require(\""ponton\"").segment')(\""sep\"")%}%#Ponton_column#%{%luaeval('require(\""ponton\"").segment')(\""column\"")%}%#Ponton_line_percent#%{%luaeval('require(\""ponton\"").segment')(\""line_percent\"")%}",1,1%
+statusline,%#Statement#%(%m%h%r%w %)%*%f%#FoldColumn#%( | %)%*%y%=%l:%c / %L%#FoldColumn#%( | %)%*%P,1,1%
+statusline,%#StatusLine#,1,1%
+statusline,%=,1,1%
+statusline,%0* %{g:currentmode[mode()]} %1* %<%t%m%r %2* %{LspReport()}%= %Y | %{&ff} | %{&fenc} %1* %3p%% %0* %{%WordCountOrRowCol()%} ,1,1%
+statusline,"%1*%{winnr()} %*%< %f %h%m%r%=%l,%c%V (%P)",1,1%
+statusline,"%1*%f%*%m%w %y %{v:lua.require'lib.statusline'.git()} %{&spell ? printf('[spell=%s]', &spelllang) : ''} %2*%{v:lua.require'lib.statusline'.lint()}%* %2*%{v:lua.require'lib.statusline'.formatting()}%* %{v:lua.require'lib.statusline'.debugger()} %= %p%% %4l/%L:%-2c",1,1%
+statusline,%F %y %h%m%r%w%=L%l/%L (%P) Co%v Ch%c,1,1%
+statusline,%q%.20f%( [%M%R%H]%)%<%=%a,1,1%
+suffixes,*default*,220,97%
+suffixes,".bak,~,.o,.h,.info,.swp,.obj,.sty,.cls,.log,.aux,.bbl,.out,.blg,.brf,.cb,.dvi,.fdb_latexmk,.fls,.idx,.ilg,.ind,.inx,.pdf,.synctex.gz,.toc",2,1%
+suffixes," .pdf, .txt, .png, .jpg, .jpeg .mp3, .wav, .ttf",1,0%
+suffixes,".bak,~,.o,.h,.info,.swp,.obj,.pyc,.pyo,.egg-info,.class",1,0%
+suffixes,".bak,~,.o,.h,.info,.swp,.obj,.snap",1,0%
+suffixes,".bak,~,.o,.info,.swp,.obj",1,1%
+suffixes,".un~,.bak,~,.swp,.log,.data",1,1%
+suffixesadd,*default*,225,99%
+suffixesadd,".tex,.latex,.java,.js,.hrl,.erl,.lisp,.asd,.lua",1,0%
+suffixesadd,.ts,1,1%
+switchbuf,*default*,217,96%
+switchbuf,usetab,3,1%
+switchbuf,useopen,2,1%
+switchbuf,"useopen,usetab",2,1%
+switchbuf,"uselast,usetab,split",1,0%
+switchbuf,"useopen,uselast",1,0%
+switchbuf,"usetab,newtab",1,1%
+synmaxcol,*default*,208,92%
+synmaxcol,250,4,2%
+synmaxcol,300,4,2%
+synmaxcol,240,3,1%
+synmaxcol,1000,1,0%
+synmaxcol,1024,1,0%
+synmaxcol,200,1,0%
+synmaxcol,2500,1,0%
+synmaxcol,500,1,0%
+synmaxcol,512,1,1%
+synmaxcol,600,1,1%
+synmaxcol,800,1,1%
+tabline,*default*,111,50%
+tabline,%!v:lua.nvim_bufferline(),51,23%
+tabline,%!v:lua.MiniTabline.make_tabline_string(),9,4%
+tabline,%!lightline#tabline(),3,1%
+tabline,%!v:lua.require'luatab'.helpers.tabline(),3,1%
+tabline,%!v:lua.require'tabline_framework'.make_tabline(),3,1%
+tabline,%!airline#extensions#tabline#get(),2,1%
+tabline,%!TabbyRenderTabline(),2,1%
+tabline,%!TabbyTabline(),2,1%
+tabline,%!TabooTabline(),2,1%
+tabline,%!v:lua.cokeline.tabline(),2,1%
+tabline,%!ctrlspace#api#Tabline(),1,0%
+tabline,"%!luaeval('require(\""buftabline.build\"")()')",1,0%
+tabline,"%!luaeval('require(\""hardline\"").update_bufferline()')",1,0%
+tabline,%!Tabline(),1,0%
+tabline,%!TALFunc(),1,0%
+tabline,%!v:lua.L.tabline.apply(),1,0%
+tabline,%!v:lua.my_tabline(),1,0%
+tabline,%!v:lua.nvim_tabline(),1,0%
+tabline,%!v:lua.require'locals.awesome.tabline'.render(),1,0%
+tabline,%!v:lua.require'settings'.tabline(),1,0%
+tabline,%!v:lua.require'tabline.tabline'.render(),1,0%
+tabline,%!v:lua.require('nvchad_ui').tabufline(),1,0%
+tabline,%!v:lua.require('tabline').render(),1,0%
+tabline,%!v:lua.tabline_buffers_tabs(),1,0%
+tabline,%!v:lua.WindLine.tabline.show(),1,0%
+tabline,%!xtabline#render#tabline(),1,0%
+tabline,%{%v:lua.require'config.ui.tabline'.tabline()%},1,0%
+tabline,%{%v:lua.require'heirline'.eval_tabline()%},1,0%
+tabline,%{%v:lua.require('tabline').get_tabline()%},1,0%
+tabline,%{%v:lua.require('three.bufferline').render()%},1,0%
+tabline,%#lualine_a_buffers_active#%1@LualineSwitchBuffer@  [No Name] %T%#lualine_transitional_lualine_a_buffers_active_to_lualine_c_command#%<%#lualine_c_command#%=%#lualine_transitional_lualine_z_tabs_active_to_lualine_c_command#%#lualine_z_tabs_active#%1@LualineSwitchTab@ 1 [No Name] %T,1,0%
+tabline,%#lualine_a_buffers_active#%1@LualineSwitchBuffer@ [No Name] %T%#lualine_transitional_lualine_a_buffers_active_to_TabLineFill#,1,0%
+tabline,%#lualine_a_buffers_inactive#%2@LualineSwitchBuffer@  keymaps.lua %T%#lualine_a_buffers_inactive#%3@LualineSwitchBuffer@  plugins.lua %T%#lualine_a_buffers_inactive#%4@LualineSwitchBuffer@  init.lua %T%#lualine_a_buffers_inactive#%5@LualineSwitchBuffer@  on_attach.lua %T%#lualine_a_buffers_active#%14@LualineSwitchBuffer@  survey.lua %T%<%#lualine_c_command#%=%#lualine_z_tabs_active#%1@LualineSwitchTab@ 1 %T,1,1%
+tabline,%#lualine_a_tabs_active#%1@LualineSwitchTab@ 1 neovim-options-servey.lua %T%#lualine_transitional_lualine_a_tabs_active_to_lualine_c_normal#%#lualine_c_normal#%=,1,1%
+tabline,%#lualine_a_tabs_active#%1@LualineSwitchTab@ 1 survey.lua %T%#lualine_transitional_lualine_a_tabs_active_to_lualine_c_normal#%#lualine_c_normal#%=,1,1%
+tabline,%#tabline_a_normal# %1@TablineSwitchBuffer@ Alpha %T%#tabline_a_to_c# %<%#lualine_c_normal#%=%#lualine_c_normal# %=%#TabLineFill#%999X %#lualine_transitional_lualine_a_command_to_TabLineFill#%#lualine_a_command# 17:29 ,1,1%
+tabline,%#tabline_a_normal# %3@TablineSwitchBuffer@  ads.js %T%#tabline_a_to_c# %<%#lualine_c_normal#%=%#lualine_transitional_lualine_y_aerial_FunctionIcon_command_to_lualine_c_normal#%#lualine_y_aerial_FunctionIcon_command#  %#lualine_y_aerial_Function_command#GMTisMobile %#lualine_b_normal#%#lualine_y_filetype_DevIconJs_command# %#lualine_b_normal# javascript %#lualine_transitional_lualine_a_normal_to_lualine_b_normal#%#lualine_a_normal# Top ,1,1%
+tabline,%<%#lualine_c_buffers_active#%1@LualineSwitchBuffer@ [No Name] %T%#lualine_c_normal#%=,1,1%
+tabline,%1@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %#BufferInactiveIndex#1 %1@BufferlineMainClickHandler@%#BufferInactive# %1@               BufferlineMainClickHandler@%#BufferInactive#[buffer 1]     %1@BufferlineCloseClickHandler@%#BufferInactive# %4@BufferlineMainClickHandler@                 %#BufferCurrentSign#▎    %#BufferCurrentIndex#2 %4@BufferlineMainClickHandler@%#DevIconDefaultCurrent# %4@BufferlineMainClickHandler@                      %#BufferCurrent#[buffer 4]     %4@BufferlineCloseClickHandler@%#BufferCurrent# %0@BufferlineMainClickHandler@                                              %#BufferTabpageFill#▎%#BufferTabpageFill#,1,1%
+tabline,%1@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %#BufferInactiveIndex#1 %1@BufferlineMainClickHandler@%#BufferInactive# %1@BufferlineMainClickHandler@%#BufferInactive#[buffer 1]     %1@BufferlineCloseClickHandler@%#BufferInactive# %4@BufferlineMainClickHandler@%#BufferCurrentSign#▎    %#BufferCurrentIndex#2 %4@BufferlineMainClickHandler@%#DevIconDefaultCurrent# %4@BufferlineMainClickHandler@%#BufferCurrent#[buffer 4]     %4@BufferlineCloseClickHandler@%#BufferCurrent# %0@BufferlineMainClickHandler@%#BufferTabpageFill#▎%#BufferTabpageFill#,1,1%
+tabline,%1@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %1@BufferlineMainClickHandler@%#BufferInactive# %1@BufferlineMainClickHandl       er@%#BufferInactive#[buffer 1]     %1@BufferlineCloseClickHandler@%#BufferInactive# %26@BufferlineMainClickHandler@%#BufferCurrentSign#▎           %26@BufferlineMainClickHandler@%#DevIconDefaultCurrent# %26@BufferlineMainClickHandler@%#BufferCurrent#[buffer 26]     %26@BufferlineCloseCl       ickHandler@%#BufferCurrent# %0@BufferlineMainClickHandler@%#BufferTabpageFill#▎%#BufferTabpageFill#,1,1%
+tabline,%1@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %1@BufferlineMainClickHandler@%#BufferInactive# %1@BufferlineMainClickHandler@%#BufferInactive#[buffer       ↳ 1]     %1@BufferlineCloseClickHandler@%#BufferInactive# %3@BufferlineMainClickHandler@%#BufferCurrentSign#▎    %3@BufferlineMainClickHandler@%#DevIconDefaultCurrent#    ↳ %3@BufferlineMainClickHandler@%#BufferCurrent#[buffer 3]     %3@BufferlineCloseClickHandler@%#BufferCurrent# %0@BufferlineMainClickHandler@                               ↳ %#BufferTabpageFill#▎%#BufferTabpageFill#,1,1%
+tabline,%1@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %1@BufferlineMainClickHandler@%#BufferInactive# %1@BufferlineMainClickHandler@%#BufferInactive#[buffer 1]     %1@BufferlineCloseClickHandler@%#BufferInactive# %7@BufferlineMainClickHandler@%#BufferCurrentSign#▎    %7@BufferlineMainClickHandler@%#DevIconDefaultCurrent# %7@BufferlineMainClickHandler@%#BufferCurrent#[buffer 7]     %7@BufferlineCloseClickHandler@%#BufferCurrent# %0@BufferlineMainClickHandler@%#BufferTabpageFill#▎%#BufferTabpageFill#,1,1%
+tabline,%1@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %1@BufferlineMainClickHandler@%#BufferInactive# %1@BufferlineMainClickHandler@%#BufferInactive#[buffer 1]     %1@BufferlineCloseClickHandler@%#BufferInactive# %9@BufferlineMainClickHandler@%#BufferCurrentSign#▎    %9@BufferlineMainClickHandler@%#DevIconDefaultCurrent# %9@BufferlineMainClickHandler@%#BufferCurrent#[buffer 9]     %9@BufferlineCloseClickHandler@%#BufferCurrent# %0@BufferlineMainClickHandler@%#BufferTabpageFill#▎%#BufferTabpageFill#,1,1%
+tabline,%1@BufferlineMainClickHandler@%#BufferInactiveSign#▎ %#BufferInactiveIndex#1 %1@BufferlineMainClickHandler@%#BufferInactiveIcon# %1@BufferlineMainClickHandler@%#BufferInactive#scratchpad.md  %1@BufferlineCloseClickHandler@%#BufferInactive# %9@BufferlineMainClickHandler@%#BufferCurrentSign#▎ %#BufferCurrentIndex#2 %9@BufferlineMainClickHandler@%#BufferCurrentIcon# %9@BufferlineMainClickHandler@%#BufferCurrent#[buffer 9]  %9@BufferlineCloseClickHandler@%#BufferCurrent# %0@BufferlineMainClickHandler@%#BufferTabpageFill#▎%#BufferTabpageFill#,1,1%
+tabline,%1@BufferlineMainClickHandler@%#BufferInactiveSign#▎ %1@BufferlineMainClickHandler@%#BufferInactive# %1@BufferlineMainClickHandler@%#BufferInactive#asd.lua  %1@BufferlineCloseClickHandler@%#BufferInactive# %57@BufferlineMainClickHandler@%#BufferCurrentSign#▎ %57@BufferlineMainClickHandler@%#DevIconDefaultCurrent# %57@BufferlineMainClickHandler@%#BufferCurrent#[buffer 57]  %57@BufferlineCloseClickHandler@%#BufferCurrent# %0@BufferlineMainClickHandler@%#BufferTabpageFill#▎%#BufferTabpageFill#,1,1%
+tabline,%5@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %#BufferInactiveIndex#1 %5@BufferlineMainClickHandler@%#BufferInactive# %5@BufferlineMainClickHandler@%#BufferInactive#[buffer 5]     %5@BufferlineCloseClickHandler@%#BufferInactive# %35@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %#BufferInactiveIndex#2 %35@BufferlineMainClickHandler@%#BufferInactive# %35@BufferlineMainClickHandler@%#BufferInactive#mac.conf     %35@BufferlineCloseClickHandler@%#BufferInactive# %37@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %#BufferInactiveIndex#3 %37@BufferlineMainClickHandler@%#BufferInactive# %37@BufferlineMainClickHandler@%#BufferInactive#init.sh     %37@BufferlineCloseClickHandler@%#BufferInactive# %39@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %#BufferInactiveIndex#4 %39@BufferlineMainClickHandler@%#BufferInactive# %39@BufferlineMainClickHandler@%#BufferInactive#default.conf     %39@BufferlineCloseClickHandler@%#BufferInactive# %53@BufferlineMainClickHandler@%#BufferInactiveSign#▎    %#BufferInactiveIndex#5 %53@BufferlineMainClickHandler@%#BufferInactive# %53@BufferlineMainClickHandler@%#BufferInactive#neovim-options-servey.lua     %53@BufferlineCloseClickHandler@%#BufferInactive# %79@BufferlineMainClickHandler@%#BufferCurrentSign#▎    %#BufferCurrentIndex#6 %79@BufferlineMainClickHandler@%#DevIconDefaultCurrent# %79@BufferlineMainClickHandler@%#BufferCurrent#[buffer 79]     %79@BufferlineCloseClickHandler@%#BufferCurrent# %0@BufferlineMainClickHandler@%#BufferTabpageFill#▎%#BufferTabpageFill#,1,1%
+tabpagemax,*default*,225,99%
+tabpagemax,15,2,1%
+tabstop,4,103,45%
+tabstop,2,91,40%
+tabstop,*default*,31,14%
+tabstop,3,2,1%
+tagcase,*default*,223,98%
+tagcase,smart,2,1%
+tagcase,followscs,1,0%
+tagcase,match,1,1%
+tagfunc,*default*,226,100%
+tagfunc,CocTagFunc,1,0%
+tags,*default*,217,96%
+tags,"./.git/tags;,./tags;,tags",2,1%
+tags,"./.git/.tags,.tags,/home/jonas/.vimtags,/home/jonas/.tags,$VIRTUAL_ENV/.tags;",1,0%
+tags,./.tags,1,0%
+tags,"./.tags;,.tags",1,0%
+tags,"./tags,tags",1,0%
+tags,"./tags,tags;/Users/m1",1,0%
+tags,"./tags;,./.git/tags,tags",1,1%
+tags,"./tags;,.tags",1,1%
+tags,".tags,tags;/",1,1%
+termbidi,*default*,226,100%
+termbidi,true,1,0%
+termguicolors,true,216,95%
+termguicolors,*default*,11,5%
+textwidth,*default*,192,85%
+textwidth,80,9,4%
+textwidth,100,7,3%
+textwidth,120,7,3%
+textwidth,78,3,1%
+textwidth,79,3,1%
+textwidth,160,1,0%
+textwidth,480,1,0%
+textwidth,66,1,0%
+textwidth,88,1,1%
+textwidth,90,1,1%
+textwidth,99,1,1%
+thesaurus,*default*,223,98%
+thesaurus,/home/fiodar_fiodarau/.config/nvim/dict/mthesaur.txt,1,0%
+thesaurus,"/Users/xxxxxx/.config/nvim/words/en.txt,/Users/xxxxxx/.config/nvim/words/en_thesaur.txt",1,0%
+thesaurus,~/.config/nvim/thesaurus/thesaurus.txt,1,1%
+thesaurus,~/.vim/thesaurus.txt,1,1%
+tildeop,*default*,220,97%
+tildeop,true,7,3%
+timeout,*default*,222,98%
+timeout,false,5,2%
+timeoutlen,*default*,144,64%
+timeoutlen,500,41,18%
+timeoutlen,300,11,5%
+timeoutlen,400,8,4%
+timeoutlen,200,4,2%
+timeoutlen,250,3,1%
+timeoutlen,100,2,1%
+timeoutlen,2000,2,1%
+timeoutlen,3000,2,1%
+timeoutlen,350,2,1%
+timeoutlen,700,2,1%
+timeoutlen,900,2,1%
+timeoutlen,0,1,0%
+timeoutlen,360,1,0%
+timeoutlen,50,1,0%
+timeoutlen,5000,1,0%
+title,*default*,174,77%
+title,true,53,23%
+titlelen,*default*,225,99%
+titlelen,10,1,0%
+titlelen,20,1,1%
+titleold,*default*,224,99%
+titleold,<Space>,1,0%
+titleold," ${substitute(system(\""uname\""),'\\(.*\\)\\n','%\\1%','')} ",1,0%
+titleold,footclient,1,1%
+titlestring,*default*,208,92%
+titlestring,%{utils#Get_titlestr()},2,1%
+titlestring,"' %{expand(""%:p"")} '",1,0%
+titlestring,"'%{expand(""%:~:h"")}'",1,0%
+titlestring,"'%t%( %M%)%( (%{expand(""%:~:.:h"")})%)%( %a%)'",1,0%
+titlestring,"'vi:%{expand(""%:t:r"")}'",1,0%
+titlestring,%.20F,1,0%
+titlestring,"%{split(getcwd(), '/')[-1]}",1,0%
+titlestring,%t,1,0%
+titlestring,%t - nvim,1,0%
+titlestring,%t%M,1,0%
+titlestring,nvim,1,0%
+titlestring,nvim - %{getcwd()},1,1%
+titlestring,nvim - %t,1,1%
+titlestring,nvim [%{v:lua.Titlestring_Filename()}%( %M%)],1,1%
+titlestring,nvim %t,1,1%
+titlestring,pbogut@redeye:nvim:1432728:~,1,1%
+titlestring,"vim %{substitute(getcwd(), '/home/danieln', '~', 0)}",1,1%
+titlestring, %t %H %M,1,1%
+ttimeout,*default*,225,99%
+ttimeout,false,2,1%
+ttimeoutlen,*default*,205,90%
+ttimeoutlen,0,8,4%
+ttimeoutlen,10,8,4%
+ttimeoutlen,20,4,2%
+ttimeoutlen,100,1,0%
+ttimeoutlen,1000,1,0%
+undofile,true,147,65%
+undofile,*default*,80,35%
+undolevels,*default*,210,93%
+undolevels,10000,6,3%
+undolevels,2000,3,1%
+undolevels,100,2,1%
+undolevels,10000000,2,1%
+undolevels,200,2,1%
+undolevels,250,1,0%
+undolevels,4096,1,0%
+undoreload,*default*,223,98%
+undoreload,100,1,0%
+undoreload,1000,1,0%
+undoreload,10000000,1,1%
+undoreload,500,1,1%
+updatecount,*default*,224,99%
+updatecount,100,2,1%
+updatecount,0,1,0%
+updatetime,*default*,71,31%
+updatetime,300,60,27%
+updatetime,100,26,12%
+updatetime,250,25,11%
+updatetime,50,10,4%
+updatetime,500,9,4%
+updatetime,1000,8,4%
+updatetime,200,6,3%
+updatetime,2000,3,1%
+updatetime,400,2,1%
+updatetime,700,2,1%
+updatetime,750,2,1%
+updatetime,120,1,0%
+updatetime,1234,1,0%
+updatetime,69,1,0%
+viewoptions,*default*,218,96%
+viewoptions,"folds,cursor,curdir,slash,unix",3,1%
+viewoptions,"cursor,folds",2,1%
+viewoptions,"cursor,folds,options,unix,slash",1,0%
+viewoptions,"cursor,folds,slash,unix",1,0%
+viewoptions,folds,1,1%
+viewoptions,"folds,cursor",1,1%
+viminfofile,*default*,223,98%
+viminfofile,.vim/main.shada,1,0%
+viminfofile,/home/username/.local/share/nvim/shada/main.shada,1,0%
+viminfofile,/Users/(username)/.cache/lvim/lvim.shada,1,1%
+viminfofile,~HOME/.local/state/avim/shada/avim.shada,1,1%
+virtualedit,*default*,189,83%
+virtualedit,block,24,11%
+virtualedit,onemore,9,4%
+virtualedit,"block,onemore",3,1%
+virtualedit,all,2,1%
+visualbell,*default*,206,91%
+visualbell,true,21,9%
+whichwrap,*default*,181,80%
+whichwrap,"b,s,<,>,[,],h,l",11,5%
+whichwrap,"<,>,[,],b,h,l,s",10,5%
+whichwrap,"<>[]hl,b,s",5,2%
+whichwrap,"b,s,h,l,<,>,[,]",4,2%
+whichwrap,"b,s,<,>,[,]",2,1%
+whichwrap,"h,l",2,1%
+whichwrap,"h,l,<,>,[,],~",2,1%
+whichwrap,"[,]",1,0%
+whichwrap,"[,],b,s",1,0%
+whichwrap,"<,>,[,],b,s,~",1,0%
+whichwrap,"<,>,[,],h,l,~",1,0%
+whichwrap,"<,>,h,l,[,]",1,0%
+whichwrap,<>[]hl,1,0%
+whichwrap,"b,h,l,s",1,0%
+whichwrap,"b,h,l,s,<,>,[,],~",1,1%
+whichwrap,"b,s,h,l",1,1%
+whichwrap,"h,l,<,>,[,]",1,1%
+wildcharm,*default*,213,94%
+wildcharm,9,11,5%
+wildcharm,26,3,1%
+wildignore,*default*,178,80%
+wildignore,"*.o,*.obj,*.dylib,*.bin,*.dll,*.exe,*/.git/*,*/.svn/*,*/__pycache__/*,*/build/**,*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,*.svg,*.ico,*.pyc,*.pkl,*.DS_Store,*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv",2,1%
+wildignore,*.pyc,2,1%
+wildignore,"__pycache__,*.o,*~,*.pyc,*pycache*",1,0%
+wildignore,".git,.hg,.svn,*.jpg,*.JPG,*.jpeg,*.JPEG,*.png,*.PNG,*.bmp,*.gif,*.o,*.obj,*.exe,*.dll,*.dylib,*.manifest,*.so,*.out,*.class,__pycache__,*.pyc,*pycache*,*.swp,*.swo,*.swn,*.DS_Store,*.ttf,*.otf",1,0%
+wildignore,".git,.hg,.svn,*.pyc,*.o,*.out,*.jpg,*.jpeg,*.png,*.gif,*.zip,**/tmp/**,*.DS_Store,**/node_modules/**",1,0%
+wildignore,".git,.hg,.svn,*.pyc,*.o,*.out,*.jpg,*.jpeg,*.png,*.gif,*.zip,**/tmp/**,*.DS_Store,**/node_modules/**,**/bower_modules/**",1,0%
+wildignore,".git,**/node_modules/*,**/bower_components/*,**/vendor/*,dist",1,0%
+wildignore,".git,*/node_modules/*,*/target/*,.metals,.bloop,.ammonite",1,0%
+wildignore,".lock,.sass-cache,.git,.hg,.svn,*.pyc,*.o,*.out,**/tmp/**,.DS_Store,**/node_modules/**,**/bower_modules/**",1,0%
+wildignore,".sass-cache,.DS_Store,.git$,~$,.swp$,gin-bin,*/node_modules/*",1,0%
+wildignore,".svelte-kit/*,.vim/*,node_modules/*,.git/*,yarn.lock,package-lock.json",1,0%
+wildignore,"*.a,*.o,*.bmp,*.gif,*.ico,*.jpg,*.png,.DS_Store,.git,.hg,.svn,*~,*.swp,*.tmp",1,0%
+wildignore,"*.a,*.o,*.pyc,*.class,*.so,*.bmp,*.gif,*.ico,*.jpg,*.png,.DS_Store,.git,.hg,.svn,*~,*.swp,*.tmp",1,0%
+wildignore,"*.aux,*.out,*.toc,*.o,*.obj,*.exe,*.dll,*.jar,*.pyc,*.rbc,*.class,*.ai,*.bmp,*.gif,*.ico,*.jpg,*.jpeg,*.png,*.psd,*.webp,*.avi,*.m4a,*.mp3,*.oga,*.ogg,*.wav,*.webm,*.eot,*.otf,*.ttf,*.woff,*.doc,*.pdf,*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz,*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*.gem,.sass-cache,npm-debug.log,*.marko.js,*.min.*,*.*~,*~,*.swp,.lock,.DS_Store,._*,tags.lockset,*.mo,*.pyc,*__pycache__*,*.egg-info*,*.egg",1,0%
+wildignore,"*.bak,*.e,*~,.hg,.git,.svn,*.aux,*.out,*.toc,*.jpg,*.bmp,*.gif,*.png,*.jpeg,*.o,*.obj,*.exe,*.dll,*.manifest,*.spl,*.sw?,*.DS_Store,*.luac,migrations,*.pyc,*.orig",1,0%
+wildignore,"*.docx,*.pdf,*.exe,*.mcmeta,*.xlsx",1,0%
+wildignore,*.DS_Store,1,0%
+wildignore,"*.gif,*.jpg,*.png,*.o,*.obj,.git,.svn,tmp",1,0%
+wildignore,*.git,1,0%
+wildignore,"*.git/*,*.tags,tags,*.o,*.class",1,0%
+wildignore,*.o,1,0%
+wildignore,"*.o,*.jpg,*.png,*.zip,*/tmp/*",1,0%
+wildignore,"*.o,*.obj,.git,*.pyc,*.pyo,*.class,.hg,.hg,.git,.svn,*.aux,*.out,*.toc,*.jpg,*.bmp,*.gif,*.png,*.jpeg,*.o,*.obj,*.exe,*.dll,*.manifest,*.spl,*.sw?,*.DS_Store,*.luac,migrations,*.orig",1,0%
+wildignore,"*.o,*.obj,*~,*.git*,*.meteor*,*vim/backups*,*sass-cache*,*mypy_cache*,*__pycache__*,*cache*,*logs*,*node_modules*,**/node_modules/**,*DS_Store*,*.gem,log/**,tmp/**,*package-lock.json*,**/dist/**,**/.next/**,**/.nx/**",1,0%
+wildignore,"*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem,*.pyc,*.swp,*~,*/.DS_Store",1,0%
+wildignore,"*.o,*~,*.pyc",1,0%
+wildignore,"*.o,*~,*.pyc,*.retry",1,0%
+wildignore,"*.o,*~,*.pyc,*/.git/*",1,0%
+wildignore,"*.png,*.jpg,*.jpeg,*.gif,*.wav,*.aiff,*.dll,*.pdb,*.mdb,*.so,*.swp,*.zip,*.gz,*.bz2,*.meta,*.svg,*.cache,*/.git/*",1,0%
+wildignore,"*.so,*.swp,*.zip,*/node_modules/*",1,1%
+wildignore,"*.so,/min/*.git,.hg,.svn,.stversions,*.pyc,*.spl,*.o,*.out,*~,%**.jpg,*.jpeg,*.png,*.gif,*.log,**/tmp/****/node_modules/**,**/bower_modules/**,*/.sass-cache/*__pycache__,*.egg-info*.out,*.obj,*.gem,*.pyc,*DS_Store**.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz*.swp,*~,._*,*/vendor/cache/*",1,1%
+wildignore,"*.swp,*.bak,*.pyc,*.class",1,1%
+wildignore,"*.swp,*.bak,*.pyc,*.class,*.synctex.gz,*.bcf,*.xdv,*.aux,*.bbl,*.blg,*.fdb_latexmk,*.fls,*.out,*.toc,*.run.xml",1,1%
+wildignore,"*.swp,*.swo,*.class,*.pyc,__pycache__,",1,1%
+wildignore,**/.git/*,1,1%
+wildignore,"**/node_modules/*,**/vendor/*,**/.git/*,**/coverage/*,**/code_coverage_html/*",1,1%
+wildignore,**/node_modules/**,1,1%
+wildignore,"*/.git/*,*/node_modules/*",1,1%
+wildignore,"*/dist*/*,*/**.min.*/,*/node_modules/**/*",1,1%
+wildignore,"*/node_modules/*,*/.git/*",1,1%
+wildignore,"*\\tmp\\*,*.swp,*.zip,*.exe,node_modules/*,bower_components/*",1,1%
+wildignore,*~,1,1%
+wildignore,"*~,*.bak,*.un~,tags,*.data,*.jpg,*.gif,*.png,*.psd,*/__pycache__/*,*/venv*/*,*/node_modules/*,*/zig-cache/*,*/zig-out/*",1,1%
+wildignore,"*~,%*,*.o,*.so,*.pyc,*.pdf,*.v.d,*.vo*,*.glob,*.cm*,*.aux,.git,.git/,**/.git/*,__pycache__,__pycache__/,**/__pycache__/*,target,target/,**/target/*",1,1%
+wildignore,"*DS_STORE*,*.png,*.jpg,*.gif",1,1%
+wildignore,"*node_modules/*,*bower_components/*,*venv/*,*__pycache__/*,*.pyc",1,1%
+wildignore,"blue.vim,darkblue.vim,default.vim,delek.vim,desert.vim, elflord.vim,evening.vim,industry.vim,koehler.vim,morning.vim,murphy.vim, pablo.vim,peachpuff.vim,ron.vim,shine.vim,slate.vim,torte.vim,zellner.vim",1,1%
+wildignorecase,*default*,204,90%
+wildignorecase,true,23,10%
+wildmenu,*default*,226,100%
+wildmenu,false,1,0%
+wildmode,*default*,165,73%
+wildmode,"longest:full,full",20,9%
+wildmode,"longest,full",8,4%
+wildmode,list:longest,6,3%
+wildmode,"list:longest,full",6,3%
+wildmode,"longest,list,full",4,2%
+wildmode,longest:full,4,2%
+wildmode,"list:longest,list:full",3,1%
+wildmode,"longest,list",3,1%
+wildmode,full:lastused,1,0%
+wildmode,"longest,full,full",1,0%
+wildmode,"longest,full,longest,full",1,0%
+wildmode,"longest,list,lastused",1,0%
+wildmode,"longest:full,full,lastused:full",1,0%
+wildmode,"longest:full,list,full",1,0%
+wildmode,"longest:full,list:full",1,1%
+wildmode,"longest:list,full",1,1%
+wildoptions,*default*,217,96%
+wildoptions,pum,9,4%
+wildoptions,tagfile,1,0%
+winaltkeys,*default*,226,100%
+winaltkeys,no,1,0%
+winbar,*default*,195,88%
+winbar,%{%v:lua.require'feline'.generate_winbar()%},10,5%
+winbar,%{%v:lua.require'heirline'.eval_winbar()%},2,1%
+winbar,%{%v:lua.require'nvim-navic'.get_location()%},2,1%
+winbar,"%!luaeval('require(\""mesopotamia.statusline_winbar\"").super_custom_winbar()')",1,0%
+winbar,%!v:lua.Statusline.winbar(),1,0%
+winbar,"%!v:lua.WindLine.show_winbar(6,1000)",1,0%
+winbar,%{%v:lua.require'util'.winbar()%},1,0%
+winbar,%{%v:lua.require('m3dry.winbar').winbar()%},1,0%
+winbar,%{%v:lua.status.get_winbar()%},1,0%
+winbar,%{%v:lua.winbar_func()%},1,0%
+winbar,%{%v:lua.Winbar()%},1,0%
+winbar,%{%v:lua.winbarline()%},1,0%
+winbar,%#NavicText# ~%#NavicSeparator# > %#NavicText#projects%#NavicSeparator# > %#NavicText#%@v:lua.require'barbecue.mouse'.navigate_1000_1_0@%#DevIconLua# %#NavicText#form.lua%X%#NavicSeparator# > %@v:lua.require'barbecue.mouse'.navigate_1000_11_6@%#NavicIconsArray# %#NavicText#bad_options%X%#NavicText#%= ,1,0%
+winbar,"%=%m %{fnamemodify(expand('%'), ':.')}:%L ",1,1%
+winbar,%=%m %f,1,1%
+winbar,%=%m %y %f:%l:%c,1,1%
+winbar,%f%m,1,1%
+winbar,%m %t,1,1%
+winblend,*default*,214,94%
+winblend,10,5,2%
+winblend,20,3,1%
+winblend,30,2,1%
+winblend,15,1,0%
+winblend,5,1,1%
+winblend,8,1,1%
+winfixheight,*default*,223,98%
+winfixheight,true,4,2%
+winfixwidth,*default*,223,98%
+winfixwidth,true,3,1%
+winfixwidth,true﻿,1,1%
+winheight,*default*,226,100%
+winheight,20,1,0%
+winhighlight,*default*,218,96%
+winhighlight,"CursorLine:CursorLine,CursorLineSign:CursorLineSign,CursorLineFold:CursorLineFold,Visual:Visual,CursorLineNr:CursorLineNr",1,0%
+winhighlight,"CursorLine:CursorLine,Visual:Visual,CursorLineFold:CursorLineFold,CursorLineSign:CursorLineSign,CursorLineNr:CursorLineNr",1,0%
+winhighlight,"CursorLineFold:CursorLineFold,CursorLineNr:CursorLineNr,Visual:Visual,CursorLine:CursorLine,CursorLineSign:CursorLineSign",1,0%
+winhighlight,"CursorLineSign:CursorLineSign,CursorLineFold:CursorLineFold,Visual:Visual,CursorLineNr:CursorLineNr,CursorLine:CursorLine",1,0%
+winhighlight,"EndOfBuffer:NvimTreeEndOfBuffer,Normal:NvimTreeNormal,CursorLine:NvimTreeCursorLine,CursorLineNr:NvimTreeCursorLineNr,WinSeparator:NvimTreeWinSeparator,StatusLine:NvimTreeStatusLine,StatusLineNC:NvimTreeStatuslineNC,SignColumn:NvimTreeSignColumn,NormalNC:NvimTreeNormalNC",1,0%
+winhighlight,"Folded:NeogitFold,Folded:NeogitFold",1,1%
+winhighlight,"Normal:ActiveWindow,NormalNC:InactiveWindow",1,1%
+winhighlight,SpecialKey:SpecialKeyWin,1,1%
+winhighlight,"Visual:Visual,CursorLine:CursorLine,CursorLineFold:CursorLineFold,CursorLineSign:CursorLineSign,CursorLineNr:CursorLineNr",1,1%
+winminheight,*default*,221,97%
+winminheight,0,5,2%
+winminheight,5,1,1%
+winminwidth,*default*,218,96%
+winminwidth,10,4,2%
+winminwidth,0,3,1%
+winminwidth,15,1,0%
+winminwidth,5,1,1%
+winwidth,*default*,218,96%
+winwidth,1,4,2%
+winwidth,30,3,1%
+winwidth,10,1,0%
+winwidth,5,1,1%
+wrap,*default*,122,54%
+wrap,false,105,46%
+wrapscan,*default*,224,99%
+wrapscan,false,3,1%
+writebackup,*default*,173,76%
+writebackup,false,53,23%
+writebackup,true,1,1%
