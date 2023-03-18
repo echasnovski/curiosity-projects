@@ -1,0 +1,7 @@
+{
+  "include": [
+    "oklab"
+  ],
+  "venvPath": ".",
+  "venv": ".venv"
+}
