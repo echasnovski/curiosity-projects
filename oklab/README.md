@@ -11,5 +11,4 @@ Sources:
 ## Set up
 
 - Install [poetry](https://python-poetry.org/).
-- Run `poetry install`. This should create virtual environment inside this directory.
-- To generate output data, run `poetry run python -m oklab.generate`.
+- To generate output data, run `make generate`.

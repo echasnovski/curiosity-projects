@@ -1,5 +1,10 @@
 """
 Conversion functions between color spaces: HEX <-> sRGB ([0;1]) <-> Oklab <-> Oklch
+
+Notes:
+- Coversions HEX <-> Oklab and HEX <-> Oklch produce coordinates in range [0; 100]
+  and can conditionally correct lightness (`True` by default).
+- Coversions sRGB <-> Oklab and sRGB <-> Oklch produce coordinates in range [0; 1].
 """
 import numpy as np
 from numpy.typing import ArrayLike, NDArray
@@ -8,20 +13,22 @@ from numpy.typing import ArrayLike, NDArray
 # HEX <-> Oklch
 def hex2oklch(hex: ArrayLike, correct_l: bool = True) -> NDArray:
     res = rgb2oklch(hex2rgb(hex))
+    res[0:2, :] = 100 * res[0:2, :]
     if correct_l:
-        res[0, :] = 100 * correct_lightness(0.01 * res[0, :])
+        res[0, :] = correct_lightness(res[0, :])
     return res
 
 
 def oklch2hex(oklch: NDArray, correct_l: bool = True) -> NDArray:
     if correct_l:
-        oklch[0, :] = 100 * correct_lightness_inv(0.01 * oklch[0, :])
-    return rgb2hex(oklab2rgb(oklch))
+        oklch[0, :] = correct_lightness_inv(oklch[0, :])
+    oklch[0:2, :] = 0.01 * oklch[0:2, :]
+    return rgb2hex(oklch2rgb(oklch))
 
 
 # HEX <-> Oklab
 def hex2oklab(hex: ArrayLike, correct_l: bool = True) -> NDArray:
-    res = rgb2oklab(hex2rgb(hex))
+    res = 100 * rgb2oklab(hex2rgb(hex))
     if correct_l:
         res[0, :] = correct_lightness(res[0, :])
     return res
@@ -30,7 +37,7 @@ def hex2oklab(hex: ArrayLike, correct_l: bool = True) -> NDArray:
 def oklab2hex(oklab: NDArray, correct_l: bool = True) -> NDArray:
     if correct_l:
         oklab[0, :] = correct_lightness_inv(oklab[0, :])
-    return rgb2hex(oklab2rgb(oklab))
+    return rgb2hex(oklab2rgb(0.01 * oklab))
 
 
 # HEX <-> RGB in [0;1]
@@ -95,7 +102,13 @@ def rgb2oklab(rgb: NDArray) -> NDArray:
     linrgb = rgb2linrgb(rgb)
     lms = np.matmul(conversion_matricies["linrgb2lms"], linrgb)
     cbrtlms = np.cbrt(lms)
-    return np.matmul(conversion_matricies["cbrtlms2oklab"], cbrtlms)
+    res = np.matmul(conversion_matricies["cbrtlms2oklab"], cbrtlms)
+
+    # Explicitly convert gray colors
+    is_gray = (np.abs(res[1:3, :]) < 1e-5).all(axis=0)
+    res[1:3, np.nonzero(is_gray)] = 0
+
+    return res
 
 
 def oklab2rgb(oklab: NDArray) -> NDArray:
@@ -105,12 +118,18 @@ def oklab2rgb(oklab: NDArray) -> NDArray:
     return linrgb2rgb(linrgb)
 
 
-def rgb2linrgb(x: NDArray) -> NDArray:
-    return np.where(0.04045 < x, np.power((x + 0.055) / 1.055, 2.4), x / 12.92)
+def rgb2linrgb(rgb: NDArray) -> NDArray:
+    rgb = np.clip(rgb, 0, 1)
+    return np.where(0.04045 < rgb, np.power((rgb + 0.055) / 1.055, 2.4), rgb / 12.92)
 
 
-def linrgb2rgb(x: NDArray) -> NDArray:
-    return np.where(0.0031308 >= x, 12.92 * x, 1.055 * np.power(x, 0.416666667) - 0.055)
+def linrgb2rgb(linrgb: NDArray) -> NDArray:
+    linrgb = np.clip(linrgb, 0, 1)
+    return np.where(
+        0.0031308 >= linrgb,
+        12.92 * linrgb,
+        1.055 * np.power(linrgb, 0.416666667) - 0.055,
+    )
 
 
 # RGB in [0;1] <-> Oklch
@@ -119,11 +138,11 @@ def rgb2oklch(rgb: NDArray) -> NDArray:
     l, a, b = oklab[0, :], oklab[1, :], oklab[2, :]
     c = np.sqrt(a**2 + b**2)
     h = np.arctan2(b, a)
-    return np.array([100 * l, 100 * c, np.rad2deg(h) % 360])
+    return np.array([l, c, np.rad2deg(h) % 360])
 
 
 def oklch2rgb(oklch: NDArray) -> NDArray:
-    l, c, h = 0.01 * oklch[0, :], 0.01 * oklch[1, :], np.deg2rad(oklch[2, :] % 360)
+    l, c, h = oklch[0, :], oklch[1, :], np.deg2rad(oklch[2, :] % 360)
     a = c * np.cos(h)
     b = c * np.sin(h)
     return oklab2rgb(np.array([l, a, b]))
@@ -131,14 +150,19 @@ def oklch2rgb(oklch: NDArray) -> NDArray:
 
 # Source:
 # https://bottosson.github.io/posts/colorpicker/#intermission---a-new-lightness-estimate-for-oklab
+# Assume both input and output in range [0; 100] instead of [0; 1]
 def correct_lightness(x: NDArray) -> NDArray:
+    x = 0.01 * x
     k_1, k_2 = 0.206, 0.03
     k_3 = (1 + k_1) / (1 + k_2)
 
-    return 0.5 * (k_3 * x - k_1 + np.sqrt((k_3 * x - k_1) ** 2 + 4 * k_2 * k_3 * x))
+    res = 0.5 * (k_3 * x - k_1 + np.sqrt((k_3 * x - k_1) ** 2 + 4 * k_2 * k_3 * x))
+    return 100 * res
 
 
 def correct_lightness_inv(x: NDArray) -> NDArray:
+    x = 0.01 * x
     k_1, k_2 = 0.206, 0.03
     k_3 = (1 + k_1) / (1 + k_2)
-    return x * (x + k_1) / (k_3 * (x + k_2))
+    res = x * (x + k_1) / (k_3 * (x + k_2))
+    return 100 * res
