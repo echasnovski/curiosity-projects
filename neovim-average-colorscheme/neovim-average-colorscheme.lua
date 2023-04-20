@@ -4,28 +4,40 @@
 --
 -- - Target color scheme plugins. Process of how they were chosen:
 --     - Go through https://github.com/rockerBOO/awesome-neovim.
---     - Pick top 10 with most stars, considerable Neovim orientation (either
---       written in Lua or many Neovim related highlight groups), which are not
---       repeating.
+--     - Pick top 10 Lua implemented color schemes with most stars which are
+--       not repeating.
 --
---   Here is the final list (as of 2023-04-19):
---     - folke/tokyonight.nvim (3468 stars)
---     - catppuccin/nvim (2637 stars)
---     - rebelot/kanagawa.nvim (2212 stars)
---     - EdenEast/nightfox.nvim (2055 stars)
---     - sainnhe/everforest (1815 stars)
---     - projekt0n/github-nvim-theme (1376 stars)
---     - sainnhe/gruvbox-material (1316 stars)
---     - sainnhe/sonokai (1199 stars)
---     - navarasu/onedark.nvim (941 stars)
---     - rose-pine/neovim (931 stars)
+--   Here is the final list (as of 2023-04-20):
+--     | Color scheme                | Stargazers |
+--     |-----------------------------|------------|
+--     | folke/tokyonight.nvim       | 3476 stars |
+--     | catppuccin/nvim             | 2639 stars |
+--     | rebelot/kanagawa.nvim       | 2219 stars |
+--     | EdenEast/nightfox.nvim      | 2055 stars |
+--     | projekt0n/github-nvim-theme | 1379 stars |
+--     | ellisonleao/gruvbox.nvim    |  987 stars |
+--     | navarasu/onedark.nvim       |  944 stars |
+--     | rose-pine/neovim            |  935 stars |
+--     | marko-cerovac/material.nvim |  752 stars |
+--     | shaunsingh/nord.nvim        |  612 stars |
 --
 --   Notes:
---     - dracula/vim (1228 stars) is not on the list as it has only a handful
---       `Diagnostic*` highlight groups.
---     - ellisonleao/gruvbox.nvim (982 stars) is not on the list as there is
---       more popular sainnhe/gruvbox-material which are essentially variations
---       on the same color scheme.
+--     - Original list was made accounting for Vimscript color schemes with
+--       Neovim relevant highlight groups. This included
+--         - 'sainnhe/everforest' (1815 stars)
+--         - 'sainnhe/gruvbox-material' (1316 stars) instead of 'gruvbox.nvim'
+--         - 'sainnhe/sonokai' (1199 stars)
+--       Although all of them are great examples of both color schemes
+--       (everforest is sooo nice) and project management, coming from same
+--       author they introduced too much skew in terms of which attributes are
+--       defined in the output. So in the end it was decided to limit to only
+--       "top 10 Lua color schemes".
+--
+-- - Using Oklab color space to average colors usually leads to a desaturation
+--   for those attributes on which sample schemes "do not agree". This is due
+--   to how Oklab is constructed: the closer to `a` and `b` coordinate are to
+--   zero, the less saturated they are.
+--   Using median instead of a mean counters while making output more relevant.
 
 local colors = require('mini.colors')
 
@@ -36,34 +48,33 @@ local cs_names = {
   'catppuccin',
   'kanagawa',
   'nightfox',
-  'everforest',
   'github_dark',
-  'gruvbox-material',
-  'sonokai',
-  'onedark',
-  'rose-pine',
+  -- 'gruvbox',
+  -- 'onedark',
+  -- 'rose-pine',
+  -- 'material',
+  -- 'nord',
 }
 
 -- local cs_names = {
---   -- Use all supplied variants
 --   "carbonfox",
 --   "catppuccin-frappe",
 --   "catppuccin-macchiato",
 --   "catppuccin-mocha",
 --   "duskfox",
---   "everforest",
 --   "github_dark",
 --   "github_dark_colorblind",
 --   "github_dark_default",
 --   "github_dimmed",
---   "gruvbox-material",
+--   -- "gruvbox",
 --   "kanagawa-dragon",
 --   "kanagawa-wave",
+--   -- "material",
 --   "nightfox",
+--   -- "nord",
 --   "nordfox",
---   "onedark",
---   "rose-pine-main",
---   "sonokai",
+--   -- "onedark",
+--   -- "rose-pine-main",
 --   "terafox",
 --   "tokyonight-moon",
 --   "tokyonight-night",
@@ -77,7 +88,7 @@ _G.cs_array = vim.tbl_map(function(name) return colors.get_colorscheme(name):com
 
 -- local n_threshold = 0
 -- local n_threshold = math.floor(0.5 * #cs_names + 0.5)
--- local n_threshold = math.floor(0.61 * #cs_names + 0.5)
+-- local n_threshold = math.floor(0.8 * #cs_names + 0.5)
 local n_threshold = #cs_names
 local avg_color_space = 'oklab'
 
@@ -103,6 +114,16 @@ local median_numeric = function(arr)
   table.sort(t)
   local id = math.floor(0.5 * #t + 0.5)
   return t[id]
+end
+
+-- TODO: Also maybe try weithed mean (with weights proportional to number of stars)
+local mean_numeric = function(arr)
+  local n, s = 0, 0
+  for _, v in pairs(arr) do
+    n, s = n + 1, s + v
+  end
+  if n == 0 then return nil end
+  return s / n
 end
 
 local dist_circle = function(x, y)
@@ -161,7 +182,7 @@ local median_hex_oklch = function(hex_tbl)
     }
   end
 
-  return colors.convert(lch_res, 'hex')
+  return colors.convert(lch_res, 'hex', { gamut_clip = 'cusp' })
 end
 
 local median_hex_oklab = function(hex_tbl)
@@ -175,7 +196,7 @@ local median_hex_oklab = function(hex_tbl)
     b = median_numeric(extract(lab_tbl, 'b')),
   }
 
-  return colors.convert(lab_res, 'hex')
+  return colors.convert(lab_res, 'hex', { gamut_clip = 'cusp' })
 end
 
 local median_hex = avg_color_space == 'oklch' and median_hex_oklch or median_hex_oklab
