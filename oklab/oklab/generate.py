@@ -107,8 +107,51 @@ def compute_colors_outside_triangle(colors, cusps):
     rgb = outside_triang.loc[:, ["r", "g", "b"]].to_numpy().T
     outside_triang["hex"] = conversion.rgb2hex(rgb)
     return outside_triang.loc[
-        :, ["hue_floor", "hex", "hex_modeled", "L", "L_lower", "L_upper", "c", "c_upper", "L_outside"]
+        :,
+        [
+            "hue_floor",
+            "hex",
+            "hex_modeled",
+            "L",
+            "L_lower",
+            "L_upper",
+            "c",
+            "c_upper",
+            "L_outside",
+        ],
     ].sort_values("L_outside", ascending=False)
+
+
+def generate_points_inside_triangles(cusps, size=1_000_000, seed=None):
+    if seed is None:
+        seed = 20230320
+    rng = np.random.Generator(np.random.PCG64(seed=seed))
+    hue = rng.uniform(0, 360, size=size)
+
+    # Generate two vectors with elements sum no more than 1
+    u = rng.uniform(size=size)
+    v = rng.uniform(size=size)
+    is_sum_more_than_one = (u + v) > 1
+    u = np.where(is_sum_more_than_one, 1 - u, u)
+    v = np.where(is_sum_more_than_one, 1 - v, v)
+
+    # Convert (hue, u, v) to (hue, L, c)
+    hue_floor = np.floor(hue).astype("int")
+    point_cusps = pd.DataFrame({"hue_floor": hue_floor}).merge(
+        cusps.loc[:, ["hue_floor", "L", "c"]], how="left", on="hue_floor"
+    )
+    c = (u * 0 + v * point_cusps["c"]).to_numpy()
+    L = (u * 100 + v * point_cusps["L"]).to_numpy()
+
+    return np.array([L, c, hue])
+
+
+def compute_triangle_share_outside_rgb_gamut(cusps, size=1_000_000, seed=None):
+    lch = generate_points_inside_triangles(cusps, size=size, seed=seed)
+    lch[0:2, :] = 0.01 * lch[0:2, :]
+    points_rgb = conversion.oklch2rgb(lch)
+    is_bad_point = ((points_rgb < 0) | (1 < points_rgb)).any(axis=0)
+    return is_bad_point.sum() / size
 
 
 def main():
@@ -128,6 +171,10 @@ def main():
 
     print("Saving colors outside of triangle")
     colors_outside_triangle.to_csv("colors_outside_triangle.csv", index=False)
+
+    print("Generating share of triangles outside of RGB")
+    share_outside = compute_triangle_share_outside_rgb_gamut(cusps, size=1_000_000)
+    print(f"  The answer is approximately {100 * share_outside:.2f}")
 
 
 if __name__ == "__main__":
