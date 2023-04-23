@@ -181,10 +181,7 @@ local average_colorschemes = function(cs_arr)
     res_groups[hl_name] = median_hl_group(extract(groups, hl_name))
   end
 
-  return colors
-    .as_colorscheme({ name = 'average_cs', groups = res_groups })
-    :add_cterm_attributes()
-    :add_terminal_colors()
+  return colors.as_colorscheme({ name = output_name, groups = res_groups }):add_cterm_attributes():add_terminal_colors()
 end
 
 -- Compute and save average color scheme ======================================
