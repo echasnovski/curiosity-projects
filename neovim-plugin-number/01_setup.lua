@@ -84,12 +84,9 @@ end
 CreateInitLines['many-sep'] = function(n_plugins)
   local res = {}
 
-  table.insert(res, '_G.log = {}')
   for plug_number = 1, n_plugins do
     local repo_path = vim.fs.joinpath(host_dir, string.format('plugin%02d', plug_number))
     table.insert(res, string.format('vim.pack.add({ "file://%s" }, { confirm = false })', repo_path))
-
-    table.insert(res, 'table.insert(_G.log, vim.o.runtimepath)')
 
     local mod_name = string.format('plugin%02d', plug_number)
     table.insert(res, string.format('require("%s").config()', mod_name))

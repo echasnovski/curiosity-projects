@@ -1,9 +1,19 @@
-## Benchmark how 'runtimepath' length affects performance
+## Benchmark how plugin number affects performance
 
-This is about performing benchmarks of how 'runtimepath' length affects performance.
+Perform and analyze benchmarks of how number of installed plugins can affect overall Neovim performance. There are two main reasons for doing this:
+
+- To get an actual data about whether lazy loading can be objectively justified.
+- To see if there is a performance benefit of using 'mini.nvim' instead of its standalone repos.
+
 Run via `./benchmark.sh` (don't forget to allow it to execute: `chmod u+x ./benchmark.sh`). Assumes `/bin/bash` and `nvim` executables. WARNING: EXECUTION OF THIS SCRIPT LEADS TO FLICKERING OF SCREEN WHICH WHICH MAY CAUSE HARM TO YOUR HEALTH. This is because there are many actual openings of Neovim with later automatic closing.
 
-Two aspects are benchmarked.
+Two performance aspects are benchmarked: startup and runtime.
+
+Running a script produces the following artifacts:
+
+- 'nvim_version' - data about Neovim version used for benchmarking.
+- 'startup-bench-summary.csv' - data about startup benchmarking.
+- 'filetype-bench-summary.csv' - data about setting filetype benchmarking.
 
 ### Startup
 
@@ -46,7 +56,7 @@ Three types of configs are benchmarked:
     require('pluginXX').config()
     ```
 
-- `many-seq` - many independent plugins are installed and configured in "sequential" manner. This installs and loads one plugin at a time while immediately configuring it. This is meant to check if having plugin entry in 'runtimepath' closer to its start adds meaningful startup improvement (as `require('pluginNN')` then needs to traverse fewer directories).
+- `many-seq` - many independent plugins are installed and configured in "sequential" manner. This installs and loads one plugin at a time while immediately configuring it. This is meant to check if having plugin entry in 'runtimepath' closer to its start adds meaningful startup improvement (as `require('pluginNN')` then needs to traverse fewer directories). SPOILER: its complicated.
 
     The 'init.lua' looks like this:
 
@@ -71,3 +81,17 @@ Three types of configs are benchmarked:
     -- ...
     require('pluginXX').config()
     ```
+
+### Runtime
+
+Effect on runtime performance when using data from so called "runtime files". For more details and examples see [`:h 'runtimepath'`](https://neovim.io/doc/user/helptag.html?tag='runtimepath') (available on Neovim>=0.12).
+
+The reason it is important is because using runtime files involves searching through (usually) all entries in 'runtimepath'. Adding a plugins adds an entry to runtimepath, so this would affect any runtime related searching.
+
+The most common operation involving runtime files is setting a [filetype](https://neovim.io/doc/user/helptag.html?tag='filetype') in a buffer. This results in searching and sourcing all filetype plugin scripts for that particular filetype. *Every time* filetype is set, which is *not negligible* (every file open, every plugin specific buffer that wants to be customized, etc.).
+
+Benchmarking is fairly straightforward:
+- Gather data by repeating many times:
+    - Create a new dedicated regular buffer to test in.
+    - Set 'filetype=does-not-exist' while timing only this operation. Use a filetype value which does not have filetype plugin scripts to not add performance cost of those scripts to benchmarks; only itself the fact of searching should be benchmarked.
+- Compute median time and record it.
