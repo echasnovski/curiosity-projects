@@ -76,7 +76,7 @@ function benchmark {
   # and is closer to actual runtime performance
   nvim -S '02_bench-filetype.lua'
   # Sleep a lot to "cool down" from extensive benchmark
-  sleep $((N_FILETYPE_ROUNDS / 1000))
+  sleep $((N_FILETYPE_ROUNDS / 250))
 
   echo "---"
   echo ""
