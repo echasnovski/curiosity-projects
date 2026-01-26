@@ -5,15 +5,7 @@ Perform and analyze benchmarks of how number of installed plugins can affect ove
 - To get an actual data about whether lazy loading can be objectively justified.
 - To see if there is a performance benefit of using 'mini.nvim' instead of its standalone repos.
 
-Run via `./benchmark.sh` (don't forget to allow it to execute: `chmod u+x ./benchmark.sh`). Assumes `/bin/bash` and `nvim` executables. WARNING: EXECUTION OF THIS SCRIPT LEADS TO FLICKERING OF SCREEN WHICH WHICH MAY CAUSE HARM TO YOUR HEALTH. This is because there are many actual openings of Neovim with later automatic closing.
-
 Two performance aspects are benchmarked: startup and runtime.
-
-Running a script produces the following artifacts:
-
-- 'nvim_version' - data about Neovim version used for benchmarking.
-- 'startup-bench-summary.csv' - data about startup benchmarking.
-- 'filetype-bench-summary.csv' - data about setting filetype benchmarking.
 
 ### Startup
 
@@ -95,3 +87,15 @@ Benchmarking is fairly straightforward:
     - Create a new dedicated regular buffer to test in.
     - Set 'filetype=does-not-exist' while timing only this operation. Use a filetype value which does not have filetype plugin scripts to not add performance cost of those scripts to benchmarks; only itself the fact of searching should be benchmarked.
 - Compute median time and record it.
+
+### Scripts
+
+Run via `./benchmark.sh` to benchmark (don't forget to allow it to execute: `chmod u+x ./benchmark.sh`). Assumes `/bin/bash` and `nvim` executables. WARNING: EXECUTION OF THIS SCRIPT LEADS TO FLICKERING OF SCREEN WHICH WHICH MAY CAUSE HARM TO YOUR HEALTH. This is because there are many actual openings of Neovim with later automatic closing.
+
+A `./benchmark.sh` script produces the following artifacts:
+
+- 'nvim_version' - data about Neovim version used for benchmarking.
+- 'startup-bench-summary.csv' - data about startup benchmarking.
+- 'filetype-bench-summary.csv' - data about setting filetype benchmarking.
+
+Run `Rscript 04_make-plots.R` to produce plots. Needs R/Rscript executable with necessary packages installed (see top of the script for the exact list).
