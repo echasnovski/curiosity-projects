@@ -160,8 +160,9 @@ init_plot <- plot_startup_summary("init") +
     subtitle = paste0(
       "Using many plugins results in a close to linear startup time increase",
       " with a significant slope\n",
-      "Using one vim.pack.add() is faster than separate,",
-      " but still much slower than a single \"bundle plugin\" "
+      "No practical difference between one and many vim.pack.add()\n",
+      "Single \"bundle plugin\" also has a close to linear behavior",
+      " but with a very small slope"
     )
   )
 save_plot(init_plot, "startup-summary_init.png")
@@ -186,7 +187,7 @@ filetype_plot <- plot_filetype_summary() +
     subtitle = paste0(
       "Using many plugins results in a linear increase",
       " with a significant slope\n",
-      "No difference between one or separate vim.pack.add()\n",
+      "No difference between one and separate vim.pack.add()\n",
       "Using one \"bundle plugin\" results in a constant overhead (much better)"
     )
   )
